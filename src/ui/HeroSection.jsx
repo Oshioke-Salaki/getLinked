@@ -3,7 +3,7 @@ import bulb from "../assets/bulb.png";
 import PrimaryBtn from "./PrimaryBtn";
 import Timer from "./Timer";
 import heroImg from "../assets/heroImg.png";
-import heroVoid from "../assets/heroVoid.png";
+
 import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
 
@@ -42,11 +42,6 @@ function HeroSection() {
           <TwinkleStar
             star={greyStar}
             className="absolute left-[15%] top-[5%]"
-          />
-          <img
-            src={heroVoid}
-            alt=""
-            className="absolute z-40 animate-pulse duration-300"
           />
           <img src={heroImg} alt="" className="grayscale" />
         </div>
