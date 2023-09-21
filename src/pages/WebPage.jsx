@@ -8,6 +8,7 @@ import PolicySection from "../ui/PolicySection";
 import PrizesSection from "../ui/PrizesSection";
 import Rules from "../ui/Rules";
 import SponsorsSection from "../ui/SponsorsSection";
+import TimelineSection from "../ui/TimelineSection";
 
 function WebPage() {
   return (
@@ -18,6 +19,7 @@ function WebPage() {
       <Rules />
       <Judging />
       <FaqSection />
+      <TimelineSection />
       <PrizesSection />
       <SponsorsSection />
       <PolicySection />

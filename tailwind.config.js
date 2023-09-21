@@ -15,6 +15,9 @@ export default {
         buttonBg:
           "linear-gradient(270deg, rgb(144, 58, 255) 0%, rgb(212, 52, 254) 56.42%, rgb(255, 38, 185) 99.99%, rgb(254, 52, 185) 100%)",
       },
+      backgroundImage: {
+        btnGradient: "linear-gradient(270deg, #903AFF 0%, #FE34B9 100%)",
+      },
     },
   },
   variants: {},
