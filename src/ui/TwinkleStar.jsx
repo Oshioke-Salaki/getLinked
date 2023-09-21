@@ -10,7 +10,7 @@ function TwinkleStar({ className, star }) {
       viewport={{ once: true }}
       src={star}
       alt="star"
-      className={`absolute w-3 animate-pulse duration-500 sm:h-5 sm:w-5 ${className}`}
+      className={`absolute animate-pulse duration-500 ${className}`}
     />
   );
 }

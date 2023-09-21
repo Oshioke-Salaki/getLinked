@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { timelineInfo } from "../data/TimelineInfo";
 import line from "../assets/line.svg";
-// import { Star } from "..";
+import TwinkleStar from "./TwinkleStar";
+import whiteStar from "../assets/whiteStar.svg";
+import greyStar from "../assets/greyStar.svg";
+import darkPurpleStar from "../assets/starDarkPurple.svg";
 
 const TimelineSection = () => {
   const container = {
@@ -26,7 +29,11 @@ const TimelineSection = () => {
   };
 
   return (
-    <section id="timeline" className="relative w-full py-14">
+    <section id="timeline" className="relative w-full py-[72px]">
+      <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
+      <TwinkleStar className="left-[1220px] top-[680px]" star={whiteStar} />
+      <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
+      <TwinkleStar className="left-[177px] top-[1160px]" star={greyStar} />
       <div className="overflow-hidden">
         <div className="flex w-full flex-col items-center justify-center gap-16">
           <div className="flex flex-col gap-4">
@@ -55,7 +62,7 @@ const TimelineSection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="flex w-full flex-col items-center justify-center gap-3"
+            className="mt-[91px] flex w-full flex-col items-center justify-center gap-3"
           >
             {/* DESKTOP */}
             {timelineInfo.map((item, i) => (
@@ -140,15 +147,6 @@ const TimelineSection = () => {
           </motion.div>
         </div>
       </div>
-      {/* <Star
-        src="/icon/purplestarIcon.png"
-        className="flex left-[20%] top-[15%]"
-      />
-      <Star
-        src="/icon/lightstarIcon.png"
-        className="flex right-[20%] top-[50%]"
-      />
-      <Star src="/icon/graystar.png" className="flex left-[5%] top-[96%]" /> */}
     </section>
   );
 };

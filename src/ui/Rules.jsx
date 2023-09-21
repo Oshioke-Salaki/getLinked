@@ -1,21 +1,14 @@
 import ruleImg from "../assets/rules.png";
 import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
+import TwinkleStar from "./TwinkleStar";
 
 function Rules() {
   return (
-    <div className="border-b-borderColor relative flex items-center justify-between gap-x-[60px] overflow-hidden border-b-[1px] pl-[184px] pr-[50px]">
-      <img
-        src={whiteStar}
-        alt=""
-        className="absolute left-[600px] top-[430px]"
-      />
-      <img
-        src={greyStar}
-        alt=""
-        className="absolute left-[439px] top-[120px]"
-      />
-      <div className="max-w-[535px]">
+    <div className="border-b-borderColor relative flex justify-between gap-x-[60px] overflow-hidden border-b-[1px] pl-[184px] pr-[50px]">
+      <TwinkleStar className="left-[439px] top-[116px]" star={greyStar} />
+      <TwinkleStar className="left-[741px] top-[405px]" star={whiteStar} />
+      <div className="mt-[138px] max-w-[535px]">
         <h1 className="text-[32px] font-bold text-white">
           Rules and
           <br /> <span className="text-primaryColor">Guidelines</span>

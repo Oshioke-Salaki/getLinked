@@ -4,25 +4,14 @@ import purpleStar from "../assets/starDarkPurple.svg";
 import judgeImg from "../assets/judging.png";
 import Criteria from "./Criteria";
 import PrimaryBtn from "./PrimaryBtn";
+import TwinkleStar from "./TwinkleStar";
 
 function Judging() {
   return (
     <div className="border-b-borderColor relative flex gap-x-[40px] overflow-hidden border-b-[1px] pb-[100px] pl-[66px] pr-[105px] pt-[75px]">
-      <img
-        src={whiteStar}
-        alt=""
-        className="absolute left-[600px] top-[430px]"
-      />
-      <img
-        src={greyStar}
-        alt=""
-        className="absolute left-[439px] top-[120px]"
-      />
-      <img
-        src={purpleStar}
-        alt=""
-        className="absolute left-[439px] top-[120px]"
-      />
+      <TwinkleStar className="left-[733px] top-[760px]" star={whiteStar} />
+      <TwinkleStar className="left-[215px] top-[78px]" star={purpleStar} />
+      <TwinkleStar className="left-[470px] top-[499px]" star={greyStar} />
       <img src={judgeImg} alt="" className="mt-[95px] h-[622px] w-[710px]" />
       <div className="max-w-[535px]">
         <h1 className="mb-[21px] text-[32px] font-bold text-white">

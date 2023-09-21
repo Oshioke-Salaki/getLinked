@@ -1,23 +1,23 @@
 import faq from "../assets/faq.png";
-import whiteStar from "../assets/whiteStar.svg";
-import greyStar from "../assets/greyStar.svg";
+import lightPurpleStar from "../assets/lightPurpleStar.svg";
 import FaqItem from "./FaqItem";
+import TwinkleStar from "./TwinkleStar";
+import darkPurpleStar from "../assets/starDarkPurple.svg";
 
 function FaqSection() {
   return (
-    <div className="border-b-borderColor relative flex justify-between gap-x-[60px] overflow-hidden border-b-[1px] pl-[160px] pr-[90px] pt-8">
-      <img
-        src={whiteStar}
-        alt=""
-        className="absolute left-[600px] top-[430px]"
+    <div className="border-b-borderColor relative flex gap-x-[25px] overflow-hidden border-b-[1px] pb-[63px]  pl-[215px] pr-[101px] pt-[70px]">
+      <TwinkleStar className="left-[183px] top-[110px]" star={darkPurpleStar} />
+      <TwinkleStar
+        className="left-[1020px] top-[97px]"
+        star={lightPurpleStar}
       />
-      <img
-        src={greyStar}
-        alt=""
-        className="absolute left-[439px] top-[120px]"
+      <TwinkleStar
+        className="left-[819px] top-[253px]"
+        star={lightPurpleStar}
       />
-      <div>
-        <h1 className="mt-[85px] text-[32px] font-bold text-white">
+      <div className="max-w-[427px]">
+        <h1 className="mt-[94px] text-[32px] font-bold text-white">
           Frequently ask
           <br /> <span className="text-primaryColor">Question</span>
         </h1>
@@ -40,7 +40,7 @@ function FaqSection() {
           </FaqItem>
         </div>
       </div>
-      <img src={faq} alt="" className="h-[789px] w-[741px]" />
+      <img src={faq} alt="" className="h-[741px] w-[741px]" />
     </div>
   );
 }
