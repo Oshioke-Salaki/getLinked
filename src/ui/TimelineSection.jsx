@@ -74,14 +74,14 @@ const TimelineSection = () => {
                   }`}
                 >
                   <h2
-                    className={`text-primaryColor text-lg font-bold lg:max-w-[450px] lg:text-2xl ${
+                    className={`text-primaryColor max-w-[450px] text-lg font-bold lg:text-2xl ${
                       item.reverse === false ? "text-left" : "text-right"
                     }`}
                   >
                     {item.topic}
                   </h2>
                   <p
-                    className={`max-w-[500px] text-sm font-normal text-white ${
+                    className={`max-w-[400px] text-sm font-normal text-white ${
                       item.reverse === false ? "text-left" : "text-right"
                     }`}
                   >
