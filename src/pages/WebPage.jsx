@@ -13,16 +13,25 @@ import flare from "../assets/flare-top.png";
 // import flare from "../assets/flare1.png";
 import flare2 from "../assets/flare-t2.png";
 import heroVoid from "../assets/heroVoid.png";
+import ruleFlare from "../assets/ruleFlareLeft.png";
 
 function WebPage() {
   return (
     <div className="bg-bgMain relative h-fit overflow-x-hidden">
       <img src={flare} className="absolute left-0 top-0 bg-blend-hard-light" />
-      <img src={flare2} className="absolute right-0 top-0 z-20" />
+      <img
+        src={flare2}
+        className="absolute right-0 top-0 z-20 bg-blend-hard-light"
+      />
       <img
         src={heroVoid}
         alt=""
         className="absolute right-[64px]  top-[257px] z-50 animate-pulse duration-300"
+      />
+      <img
+        src={ruleFlare}
+        alt=""
+        className="absolute top-[1319px] z-20 bg-blend-hard-light"
       />
       <Navbar />
       <HeroSection />
