@@ -3,6 +3,7 @@ import bulb from "../assets/bulb.png";
 import PrimaryBtn from "./PrimaryBtn";
 import Timer from "./Timer";
 import heroImg from "../assets/heroImg.png";
+import heroVoid from "../assets/heroVoid.png";
 import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
 
@@ -43,11 +44,23 @@ function HeroSection() {
         </svg>
       </h4>
       <div className="relative  flex flex-col">
-        <img
+        {/* <img
           src={heroImg}
           alt=""
           className="absolute bottom-[-40px] right-[-60px] z-0 h-full w-[680] max-w-[715px]"
-        />
+        /> */}
+        <div className="absolute bottom-[-20px] right-[-60px] z-0 flex h-full w-[680] max-w-[715px] items-center justify-center">
+          {/* <Star
+              src="/icon/graystar.png"
+              className="hidden tab:flex left-[15%] top-[5%]"
+            /> */}
+          <img
+            src={heroVoid}
+            alt=""
+            className="absolute z-40 animate-pulse duration-300"
+          />
+          <img src={heroImg} alt="" className="grayscale" />
+        </div>
         <img
           src={bulb}
           alt=""
