@@ -5,6 +5,7 @@ import Judging from "../ui/Judging";
 import Navbar from "../ui/Navbar";
 import PrizesSection from "../ui/PrizesSection";
 import Rules from "../ui/Rules";
+import SponsorsSection from "../ui/SponsorsSection";
 
 function WebPage() {
   return (
@@ -16,6 +17,7 @@ function WebPage() {
       <Judging />
       <FaqSection />
       <PrizesSection />
+      <SponsorsSection />
     </div>
   );
 }
