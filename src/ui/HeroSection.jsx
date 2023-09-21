@@ -8,23 +8,17 @@ import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
 
 import spark from "../assets/spark.png";
+import TwinkleStar from "./TwinkleStar";
 function HeroSection() {
   return (
     <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] pl-[130px] pr-[55px] pt-8">
-      <img
-        src={whiteStar}
-        alt=""
+      <TwinkleStar
         className="absolute left-[185px] top-[68px]"
+        star={whiteStar}
       />
-      <img
-        src={greyStar}
-        alt=""
+      <TwinkleStar
         className="absolute left-[571px] top-[605px]"
-      />
-      <img
-        src={greyStar}
-        alt=""
-        className="absolute left-[600px] top-[146px]"
+        star={greyStar}
       />
       <h4 className="font-mons relative w-full text-right text-[36px] font-bold text-white">
         Igniting a Revolution in HR Innovation{" "}
@@ -44,16 +38,11 @@ function HeroSection() {
         </svg>
       </h4>
       <div className="relative  flex flex-col">
-        {/* <img
-          src={heroImg}
-          alt=""
-          className="absolute bottom-[-40px] right-[-60px] z-0 h-full w-[680] max-w-[715px]"
-        /> */}
         <div className="absolute bottom-[-20px] right-[-60px] z-0 flex h-full w-[680] max-w-[715px] items-center justify-center">
-          {/* <Star
-              src="/icon/graystar.png"
-              className="hidden tab:flex left-[15%] top-[5%]"
-            /> */}
+          <TwinkleStar
+            star={greyStar}
+            className="absolute left-[15%] top-[5%]"
+          />
           <img
             src={heroVoid}
             alt=""
@@ -91,3 +80,11 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
+{
+  /* <img
+          src={heroImg}
+          alt=""
+          className="absolute bottom-[-40px] right-[-60px] z-0 h-full w-[680] max-w-[715px]"
+        /> */
+}
