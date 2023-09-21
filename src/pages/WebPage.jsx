@@ -43,7 +43,7 @@ function WebPage() {
       <img
         src={judgeFlare}
         alt=""
-        className="absolute right-[-417px] top-[2642px] bg-blend-hard-light"
+        className="absolute right-[-100px] top-[2642px] bg-blend-hard-light"
       />
       <Navbar />
       <HeroSection />
