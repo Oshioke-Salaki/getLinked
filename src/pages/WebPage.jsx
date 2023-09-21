@@ -31,7 +31,7 @@ function WebPage() {
       <img
         src={ruleFlare}
         alt=""
-        className="absolute top-[1319px] z-20 bg-blend-hard-light"
+        className="absolute top-[1319px] bg-blend-hard-light"
       />
       <Navbar />
       <HeroSection />
