@@ -15,6 +15,7 @@ import flare2 from "../assets/flare-t2.png";
 import heroVoid from "../assets/heroVoid.png";
 import ruleFlare from "../assets/ruleFlareLeft.png";
 import ruleFlareRight from "../assets/ruleFlareRight.png";
+import judgeFlare from "../assets/judgeFlare.png";
 
 function WebPage() {
   return (
@@ -38,6 +39,11 @@ function WebPage() {
         src={ruleFlareRight}
         alt=""
         className="absolute right-[-21px] top-[1610px] bg-blend-hard-light"
+      />
+      <img
+        src={judgeFlare}
+        alt=""
+        className="absolute right-[-417px] top-[2642px] bg-blend-hard-light"
       />
       <Navbar />
       <HeroSection />
