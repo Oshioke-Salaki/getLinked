@@ -29,7 +29,7 @@ const TimelineSection = () => {
   };
 
   return (
-    <section id="timeline" className="relative w-full py-[72px]">
+    <section id="timeline" className="relative w-full pb-[109px] pt-[72px]">
       <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
       <TwinkleStar className="left-[1220px] top-[680px]" star={whiteStar} />
       <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />

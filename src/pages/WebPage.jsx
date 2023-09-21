@@ -12,7 +12,7 @@ import TimelineSection from "../ui/TimelineSection";
 
 function WebPage() {
   return (
-    <div className="bg-bgMain h-fit">
+    <div className="bg-bgMain h-fit overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <Idea />

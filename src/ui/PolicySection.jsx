@@ -1,9 +1,28 @@
 import tick from "../assets/tick.png";
 import policy from "../assets/policy.png";
 import PrimaryBtn from "./PrimaryBtn";
+import TwinkleStar from "./TwinkleStar";
+import greyStar from "../assets/greyStar.svg";
+import darkPurple from "../assets/starDarkPurple.svg";
+import purpleStar from "../assets/lightPurpleStar.svg";
+import whiteMini from "../assets/whiteStarMini.png";
+import lightPurpleMini from "../assets/lightPurpleStarMini.png";
 function PolicySection() {
   return (
-    <div className="flex justify-center gap-x-[50px] pb-[167px] pl-[170px] pr-[123px] pt-[93px]">
+    <div className="relative flex justify-center gap-x-[50px] pb-[167px] pl-[170px] pr-[123px] pt-[93px]">
+      <TwinkleStar className="left-[514px] top-[159px]" star={greyStar} />
+      <TwinkleStar className="left-[733px] top-[274px]" star={darkPurple} />
+      <TwinkleStar className="left-[100px] top-[838px]" star={purpleStar} />
+      <TwinkleStar className="left-[1393px] top-[842px]" star={greyStar} />
+      <TwinkleStar className="left-[1265px] top-[260px]" star={whiteMini} />
+      <TwinkleStar className="left-[921px] top-[803px]" star={whiteMini} />
+      <TwinkleStar
+        className="left-[991px] top-[697px]"
+        star={lightPurpleMini}
+      />
+      {/* <TwinkleStar className="left-[1374px] top-[407px]" star={whiteStar} /> */}
+      {/* <TwinkleStar className="left-[1143px] top-[835px]" star={greyStar} /> */}
+      {/* <TwinkleStar className="left-[1024px] top-[291px]" star={greyStar} />  */}
       <div>
         <h1 className="mb-[17px] mt-[76px] text-[32px] font-bold text-white">
           Privacy Policy and

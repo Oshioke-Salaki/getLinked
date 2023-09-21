@@ -4,10 +4,22 @@ import sponsor3 from "../assets/sponsor3.png";
 import sponsor4 from "../assets/sponsor4.png";
 import sponsor5 from "../assets/sponsor5.png";
 import sponsor6 from "../assets/sponsor6.png";
+import flareLeft from "../assets/flare1.png";
+import flareRight from "../assets/flare4.png";
 
 function SponsorsSection() {
   return (
-    <div className="border-b-borderColor flex flex-col items-center border-b-[1px] bg-[#ffffff2] px-[128px] pb-[128px] pt-[114px] text-center">
+    <div className="border-b-borderColor relative flex flex-col items-center border-b-[1px] bg-[#ffffff2] px-[128px] pb-[128px] pt-[114px] text-center">
+      <img
+        src={flareLeft}
+        alt=""
+        className="absolute left-[-231px] top-[-149px] bg-blend-hard-light"
+      />
+      <img
+        src={flareRight}
+        alt=""
+        className="absolute right-[-90px] top-[360px] bg-blend-hard-light"
+      />
       <h1 className="mb-[22px] text-[32px] font-bold leading-[86px] text-white">
         Partners and Sponsors
       </h1>
