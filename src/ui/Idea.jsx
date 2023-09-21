@@ -5,7 +5,7 @@ import lightPurpleStar from "../assets/lightPurpleStar.svg";
 
 function Idea() {
   return (
-    <div className="border-b-borderColor relative flex items-center justify-between gap-x-[60px] border-b-[1px] pb-[78px] pl-[85px] pr-[120px] pt-[62px]">
+    <div className="border-b-borderColor relative flex items-center justify-between gap-x-[60px] border-b-[1px] pb-[78px] pl-[230px] pr-[148px] pt-[62px]">
       <img
         src={lightPurpleStar}
         alt=""
@@ -14,10 +14,10 @@ function Idea() {
       <img
         src={curlArr}
         alt=""
-        className="absolute bottom-[62px] left-[530px]"
+        className="absolute bottom-[62px] left-[689px]"
       />
       <img src={idea} alt="" className="h-[477px] w-[490px]" />
-      <div>
+      <div className="max-w-[535px]">
         <h1 className="relative text-[32px] font-bold text-white">
           Introduction to getlinked
           <br /> <span className="text-primaryColor">tech Hackathon 1.0</span>

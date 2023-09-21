@@ -4,7 +4,7 @@ import greyStar from "../assets/greyStar.svg";
 
 function Rules() {
   return (
-    <div className="border-b-borderColor relative flex items-center justify-between gap-x-[60px] overflow-hidden border-b-[1px] pl-[160px]">
+    <div className="border-b-borderColor relative flex items-center justify-between gap-x-[60px] overflow-hidden border-b-[1px] pl-[184px] pr-[50px]">
       <img
         src={whiteStar}
         alt=""
@@ -15,7 +15,7 @@ function Rules() {
         alt=""
         className="absolute left-[439px] top-[120px]"
       />
-      <div>
+      <div className="max-w-[535px]">
         <h1 className="text-[32px] font-bold text-white">
           Rules and
           <br /> <span className="text-primaryColor">Guidelines</span>
@@ -29,11 +29,7 @@ function Rules() {
           that can change the world, that&apos;s what we&apos;re all about!
         </p>
       </div>
-      <img
-        src={ruleImg}
-        alt=""
-        className="mr-[-40px] mt-[-20px] h-[664px] w-[664px]"
-      />
+      <img src={ruleImg} alt="" className="mt-[-20px] h-[664px] w-[664px]" />
     </div>
   );
 }

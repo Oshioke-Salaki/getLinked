@@ -7,7 +7,7 @@ import PrimaryBtn from "./PrimaryBtn";
 
 function Judging() {
   return (
-    <div className="border-b-borderColor relative flex gap-x-[40px] overflow-hidden border-b-[1px] pb-[100px] pl-[66px] pr-[119px] pt-[78px]">
+    <div className="border-b-borderColor relative flex gap-x-[40px] overflow-hidden border-b-[1px] pb-[100px] pl-[66px] pr-[105px] pt-[75px]">
       <img
         src={whiteStar}
         alt=""
@@ -23,8 +23,8 @@ function Judging() {
         alt=""
         className="absolute left-[439px] top-[120px]"
       />
-      <img src={judgeImg} alt="" className="h-[622px] w-[622px] self-end" />
-      <div>
+      <img src={judgeImg} alt="" className="mt-[95px] h-[622px] w-[710px]" />
+      <div className="max-w-[535px]">
         <h1 className="mb-[21px] text-[32px] font-bold text-white">
           Judging Criteria
           <br /> <span className="text-primaryColor">Key attributes</span>
