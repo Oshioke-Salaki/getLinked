@@ -70,11 +70,15 @@ function HeroSection() {
 
       {/* STARS */}
       <TwinkleStar
-        className="absolute left-[185px] top-[68px]"
+        star={greyStar}
+        className="absolute left-[63px] top-[81px] flex h-[8px] w-[6px] sm:hidden"
+      />
+      <TwinkleStar
+        className="absolute left-[120px] top-[81px] h-[12px] w-[10px] sm:left-[185px] sm:top-[68px] sm:h-auto sm:w-auto"
         star={whiteStar}
       />
       <TwinkleStar
-        className="absolute left-[571px] top-[605px]"
+        className="absolute left-[293px] top-[275px] h-[8px] w-[6px] sm:left-[571px] sm:top-[605px] sm:h-auto sm:w-auto"
         star={greyStar}
       />
     </div>
