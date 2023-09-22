@@ -22,7 +22,7 @@ function Judging() {
           Judging Criteria
           <br /> <span className="text-primaryColor">Key attributes</span>
         </h1>
-        <div className="mb-0 flex flex-col gap-y-5 sm:mb-10 sm:gap-y-[22px]">
+        <div className="mb-7 flex flex-col gap-y-5 sm:mb-10 sm:gap-y-[22px]">
           <Criteria criteria="Innovation and Creativity">
             Evaluate the uniqueness and creativity of the solution. Consider
             whether it addresses a real-world problem in a novel way or
