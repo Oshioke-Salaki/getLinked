@@ -17,12 +17,12 @@ function Judging() {
         alt=""
         className="mt-0 h-[275px] w-[332px] sm:mt-[95px] sm:h-[622px] sm:w-[710px]"
       />
-      <div className="max-w-[303px] sm:max-w-[535px]">
-        <h1 className="mb-[21px] text-[32px] font-bold text-white">
+      <div className="max-w-[303px] text-center sm:max-w-[535px] sm:text-left">
+        <h1 className="mb-4 text-xl font-bold text-white sm:mb-[21px] sm:text-[32px]">
           Judging Criteria
           <br /> <span className="text-primaryColor">Key attributes</span>
         </h1>
-        <div className="mb-10 flex flex-col gap-y-[22px]">
+        <div className="mb-0 flex flex-col gap-y-5 sm:mb-10 sm:gap-y-[22px]">
           <Criteria criteria="Innovation and Creativity">
             Evaluate the uniqueness and creativity of the solution. Consider
             whether it addresses a real-world problem in a novel way or
