@@ -25,7 +25,7 @@ function Rules() {
       <img
         src={ruleImg}
         alt=""
-        className="mt-[-20px] h-[382px] w-[294px] sm:h-[664px] sm:w-[664px]"
+        className="mt-[-20px] h-[340px] w-[294px] sm:h-[664px] sm:w-[664px]"
       />
     </div>
   );
