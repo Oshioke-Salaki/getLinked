@@ -12,7 +12,7 @@ import flareRight from "../assets/flareRight.png";
 
 function PrizesSection() {
   return (
-    <div className="relative flex justify-center gap-x-[37px] pb-[149px] pl-[106px] pr-[129px] pt-[74px]">
+    <div className="relative flex flex-col justify-normal pb-[89px] pl-0 pr-0 pt-[72px] sm:flex-row sm:justify-center sm:gap-x-[37px] sm:pb-[149px] sm:pl-[106px] sm:pr-[129px] sm:pt-[74px]">
       <img
         src={flare1}
         alt=""
@@ -32,19 +32,24 @@ function PrizesSection() {
       <img
         src={prizeMain}
         alt=""
-        className="z-10 mt-[179px] h-[482px] w-[548px]"
+        className="z-10 mt-[179px] hidden h-[482px] w-[548px] sm:flex"
       />
       <div>
-        <div className="mb-[83px] pl-[149px]">
-          <h1 className=" text-[32px] font-bold text-white">
+        <div className="mb-10 pl-0 text-center sm:mb-[83px] sm:pl-[149px] sm:text-left">
+          <h1 className=" text-xl font-bold text-white sm:text-[32px]">
             Prizes and
             <br /> <span className="text-primaryColor">Rewards</span>
           </h1>
-          <p className="font-mons mt-4 text-sm font-normal leading-7 text-white">
+          <p className="font-mons mt-[3px] text-xs font-normal leading-5 text-white sm:mt-4 sm:text-sm sm:leading-7">
             Highlight of the prizes or rewards for winners and
             <br /> for participants
           </p>
         </div>
+        <img
+          src={prizeMain}
+          alt=""
+          className="mb-[51px] flex h-[282px] w-[321px] sm:hidden"
+        />
         <div className="relative w-fit">
           <img src={medals} className="absolute left-4 h-[296px] w-[660px]" />
           <div className="flex gap-x-[30px] pt-[130px]">
