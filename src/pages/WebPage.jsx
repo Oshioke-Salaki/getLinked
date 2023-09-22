@@ -21,7 +21,7 @@ function WebPage() {
   return (
     <div className="bg-bgMain relative h-fit overflow-x-hidden">
       <div
-        className="absolute left-0 top-0 h-[442px] w-[396px] bg-blend-hard-light sm:h-auto sm:w-auto"
+        className="absolute left-0 top-0 h-[442px] w-[396px] sm:h-auto sm:w-auto"
         style={{
           background: `url(${flare}), lightgray -184.527px 3.278px / 146.745% 105.327% no-repeat`,
         }}
