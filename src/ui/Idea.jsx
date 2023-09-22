@@ -17,12 +17,12 @@ function Idea() {
         alt=""
         className="h-[257px] w-[264px] sm:h-[477px] sm:w-[490px]"
       />
-      <div className="mt-0 max-w-[535px] sm:mt-[131px]">
+      <div className="mt-0 max-w-[320px] sm:mt-[131px] sm:max-w-[535px]">
         <h1 className="relative text-center text-xl font-bold leading-[26px] text-white sm:text-left sm:text-[32px] sm:leading-9">
           Introduction to getlinked
           <br /> <span className="text-primaryColor">tech Hackathon 1.0</span>
         </h1>
-        <p className="font-mons mt-4 text-sm font-normal leading-7 text-white">
+        <p className="font-mons mt-4 text-center text-[13px] font-normal leading-7 text-white sm:text-left sm:text-sm">
           Our tech hackathon is a melting pot of visionaries, and its purpose is
           as clear as day: to shape the future. Whether you&apos;re a coding
           genius, a design maverick, or a concept wizard, you&apos;ll have the
