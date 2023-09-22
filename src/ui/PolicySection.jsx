@@ -10,19 +10,6 @@ import lightPurpleMini from "../assets/lightPurpleStarMini.png";
 function PolicySection() {
   return (
     <div className="relative flex  flex-col items-center justify-normal gap-y-[48px] pb-[167px] pl-[50px] pr-[50px] pt-[71px] text-center sm:flex-row sm:items-start  sm:justify-center sm:gap-x-[50px] sm:pl-[170px] sm:pr-[123px] sm:pt-[93px] sm:text-left">
-      <TwinkleStar className="left-[514px] top-[159px]" star={greyStar} />
-      <TwinkleStar className="left-[733px] top-[274px]" star={darkPurple} />
-      <TwinkleStar className="left-[100px] top-[838px]" star={purpleStar} />
-      <TwinkleStar className="left-[1393px] top-[842px]" star={greyStar} />
-      <TwinkleStar className="left-[1265px] top-[260px]" star={whiteMini} />
-      <TwinkleStar className="left-[921px] top-[803px]" star={whiteMini} />
-      <TwinkleStar
-        className="left-[991px] top-[697px]"
-        star={lightPurpleMini}
-      />
-      {/* <TwinkleStar className="left-[1374px] top-[407px]" star={whiteStar} /> */}
-      {/* <TwinkleStar className="left-[1143px] top-[835px]" star={greyStar} /> */}
-      {/* <TwinkleStar className="left-[1024px] top-[291px]" star={greyStar} />  */}
       <div>
         <h1 className="mb-[5px] mt-0 font-bold text-[20] text-white sm:mb-[17px] sm:mt-[76px] sm:text-[32px]">
           Privacy Policy and
@@ -71,6 +58,18 @@ function PolicySection() {
         src={policy}
         alt=""
         className="h-full w-full sm:h-[952px] sm:w-[583px]"
+      />
+
+      {/* STARS */}
+      <TwinkleStar className="left-[514px] top-[159px]" star={greyStar} />
+      <TwinkleStar className="left-[733px] top-[274px]" star={darkPurple} />
+      <TwinkleStar className="left-[100px] top-[838px]" star={purpleStar} />
+      <TwinkleStar className="left-[1393px] top-[842px]" star={greyStar} />
+      <TwinkleStar className="left-[1265px] top-[260px]" star={whiteMini} />
+      <TwinkleStar className="left-[921px] top-[803px]" star={whiteMini} />
+      <TwinkleStar
+        className="left-[991px] top-[697px]"
+        star={lightPurpleMini}
       />
     </div>
   );
