@@ -32,7 +32,7 @@ function Rules() {
         star={greyStar}
       />
       <TwinkleStar
-        className="left-[43px] top-[185px] sm:left-[741px] sm:top-[405px] sm:h-auto sm:w-auto"
+        className="left-[43px] top-[170px] h-[12px] w-[10px] sm:left-[741px] sm:top-[405px] sm:h-auto sm:w-auto"
         star={whiteStar}
       />
       <TwinkleStar
