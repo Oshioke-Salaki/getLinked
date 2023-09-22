@@ -124,8 +124,8 @@ const TimelineSection = () => {
                 key={i}
                 className="flex w-full items-start justify-start gap-4 text-white sm:hidden"
               >
-                <div className="flex flex-col items-center gap-1">
-                  <img src={line} alt="-" className="h-[77px] object-contain" />
+                <div className="flex h-full flex-col items-center gap-1">
+                  <img src={line} alt="-" className="h-auto object-contain" />
                   <span className="bg-btnGradient flex h-5 w-5 items-center justify-center rounded-full text-sm font-bold text-white md:text-lg">
                     {i + 1}
                   </span>
