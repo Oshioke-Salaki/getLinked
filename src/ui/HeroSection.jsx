@@ -38,7 +38,7 @@ function HeroSection() {
         <img
           src={bulb}
           alt=""
-          className="absolute left-[273px] top-[26px] h-[73px] w-[53px] items-end sm:left-[516px] sm:top-[45px]"
+          className="absolute left-[273px] top-[26px] h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
         />
         <h1 className="mt-10 text-center text-[32px] font-bold  text-white sm:mt-[100px] sm:text-left sm:text-[80px] sm:leading-[90px]">
           getlinked Tech
