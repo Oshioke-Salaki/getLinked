@@ -70,7 +70,7 @@ const TimelineSection = () => {
               <motion.div
                 variants={itemdisplay}
                 key={i}
-                className={` hidden w-full items-end justify-center gap-20 sm:flex ${
+                className={` hidden w-full items-end justify-center gap-20 text-white sm:flex ${
                   item.reverse === false ? "flex-row-reverse" : "flex-row"
                 }`}
               >
