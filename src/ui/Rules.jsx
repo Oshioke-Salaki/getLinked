@@ -5,7 +5,7 @@ import TwinkleStar from "./TwinkleStar";
 
 function Rules() {
   return (
-    <div className="border-b-borderColor relative flex flex-col-reverse justify-start gap-x-[60px] gap-y-[10px] overflow-hidden border-b-[1px] pl-0 pr-0 sm:flex-row sm:justify-between sm:pl-[184px] sm:pr-[50px]">
+    <div className="border-b-borderColor pb-46px relative flex flex-col-reverse items-center justify-start gap-x-[60px] gap-y-[10px] overflow-hidden border-b-[1px] pl-0 pr-0 sm:flex-row sm:items-start sm:justify-between sm:pb-0 sm:pl-[184px] sm:pr-[50px]">
       <TwinkleStar className="left-[439px] top-[116px]" star={greyStar} />
       <TwinkleStar className="left-[741px] top-[405px]" star={whiteStar} />
       <div className="mt-0 sm:mt-[138px] sm:max-w-[535px]">
