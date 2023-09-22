@@ -11,7 +11,7 @@ import spark from "../assets/spark.png";
 import TwinkleStar from "./TwinkleStar";
 function HeroSection() {
   return (
-    <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] pl-[130px] pr-[55px] pt-8">
+    <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] px-[33px] pt-8 sm:pl-[130px] sm:pr-[55px]">
       <h4 className="font-mons relative w-full text-base font-bold text-white sm:text-right sm:text-[36px]">
         Igniting a Revolution in HR Innovation{" "}
         <svg
