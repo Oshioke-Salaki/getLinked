@@ -46,7 +46,7 @@ function HeroSection() {
         <div className=" flex items-center justify-center sm:justify-start">
           <h1 className="flex text-center text-[32px] font-bold  text-white sm:mt-[100px] sm:text-left sm:text-[80px] sm:leading-[90px]">
             Hackathon{" "}
-            <span className="text-primaryColor ml-3 flex items-center">
+            <span className="text-primaryColor ml-2 flex items-center sm:ml-3">
               1.0
             </span>
           </h1>
