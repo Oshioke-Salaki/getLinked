@@ -28,7 +28,7 @@ function HeroSection() {
           />
         </svg>
       </h4>
-      <div className="relative  flex flex-col">
+      <div className="relative  flex flex-col items-center sm:items-start">
         <div className="absolute bottom-0 right-0  top-[399px] z-0 flex h-[362px] w-full items-center justify-center sm:bottom-[-20px] sm:right-[-60px] sm:top-0 sm:h-full sm:w-[680] sm:max-w-[715px]">
           <TwinkleStar
             star={greyStar}
@@ -53,7 +53,7 @@ function HeroSection() {
           </h1>
           <Emojis />
         </div>
-        <p className="font-mons mb-[41px] px-[63px] text-[13px] font-normal leading-[22px] text-white sm:px-0 sm:text-xl sm:leading-8">
+        <p className="font-mons mb-6 px-[63px] text-[13px] font-normal leading-[22px] text-white sm:mb-[41px] sm:px-0 sm:text-xl sm:leading-8">
           Participate in getlinked tech Hackathon 2023 stand
           <br /> a chance to win a Big prize
         </p>
