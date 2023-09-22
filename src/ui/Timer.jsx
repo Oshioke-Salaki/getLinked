@@ -10,7 +10,7 @@ function Timer() {
   };
 
   return (
-    <div className="font-unica mb-[95px] mt-[14px] flex items-center gap-[20px] sm:mt-[50px]">
+    <div className="font-unica mb-[17px] mt-[14px] flex items-center gap-[20px] sm:mb-[95px] sm:mt-[50px]">
       <h5 className="sm:leading[85px] text-[48px] font-normal leading-[64px] text-white sm:text-[64px]">
         {timeFormatter(hours)}
         <span className="font-mons leading[18px] text-sm font-normal">H</span>
