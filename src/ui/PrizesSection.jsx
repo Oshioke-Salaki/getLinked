@@ -23,12 +23,6 @@ function PrizesSection() {
         alt=""
         className="botom-[-238px] absolute right-[-21px] z-0"
       />
-      <TwinkleStar className="left-[316px] top-[146px]" star={purpleStar} />
-      <TwinkleStar className="left-[307px] top-[846px]" star={whiteStar} />
-      <TwinkleStar className="left-[748px] top-[275px]" star={whiteStar} />
-      <TwinkleStar className="left-[1374px] top-[407px]" star={whiteStar} />
-      <TwinkleStar className="left-[1143px] top-[835px]" star={greyStar} />
-      <TwinkleStar className="left-[1024px] top-[291px]" star={greyStar} />
       <img
         src={prizeMain}
         alt=""
@@ -62,6 +56,32 @@ function PrizesSection() {
           </div>
         </div>
       </div>
+
+      {/* STAR */}
+      <TwinkleStar
+        className="left-[57px] top-[46px] h-[9px] w-[7px] sm:left-[316px] sm:top-[79px] sm:h-[25px] sm:w-[21px] "
+        star={purpleStar}
+      />
+      <TwinkleStar
+        className="left-[273px] top-[91px] h-[9px] w-[7px] sm:left-[1189px] sm:top-[163px] sm:h-[25px] sm:w-[21px]"
+        star={purpleStar}
+      />
+      <TwinkleStar
+        className="left-[68px] top-[492px] h-[12px] w-[10px] sm:left-[748px] sm:top-[275px] sm:h-[32px] sm:w-[26px]"
+        star={whiteStar}
+      />
+      <TwinkleStar
+        className="left-[319px] top-[562px] h-[12px] w-[10px] sm:left-[1374px] sm:top-[407px] sm:h-[32px] sm:w-[26px]"
+        star={whiteStar}
+      />
+      <TwinkleStar
+        className="top-[562px] hidden sm:left-[574px] sm:top-[629px] sm:flex sm:h-[32px] sm:w-[26px]"
+        star={whiteStar}
+      />
+      <TwinkleStar
+        className="left-[243px] top-[805px] h-[12px] w-[10px] sm:left-[1143px] sm:top-[806px] sm:h-[32px] sm:w-[26px]"
+        star={greyStar}
+      />
     </div>
   );
 }
