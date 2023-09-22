@@ -12,7 +12,11 @@ function Idea() {
         alt=""
         className="absolute left-[181px] top-[296px] sm:left-[689px] sm:top-[490px]"
       />
-      <img src={idea} alt="" className="h-[477px] w-[490px]" />
+      <img
+        src={idea}
+        alt=""
+        className="h-[257px] w-[264px] sm:h-[477px] sm:w-[490px]"
+      />
       <div className="mt-[131px] max-w-[535px]">
         <h1 className="relative text-[32px] font-bold text-white">
           Introduction to getlinked
