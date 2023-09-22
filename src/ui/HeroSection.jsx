@@ -12,21 +12,13 @@ import TwinkleStar from "./TwinkleStar";
 function HeroSection() {
   return (
     <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] pl-[130px] pr-[55px] pt-8">
-      <TwinkleStar
-        className="absolute left-[185px] top-[68px]"
-        star={whiteStar}
-      />
-      <TwinkleStar
-        className="absolute left-[571px] top-[605px]"
-        star={greyStar}
-      />
-      <h4 className="font-mons relative w-full text-right text-[36px] font-bold text-white">
+      <h4 className="font-mons relative w-full text-base font-bold text-white sm:text-right sm:text-[36px]">
         Igniting a Revolution in HR Innovation{" "}
         <svg
-          className="absolute right-[10px] top-[84%] m-0"
+          className="absolute right-[10px] top-[84%] m-0 h-[11px] w-[115px] sm:h-[17px] sm:w-[255px]"
           xmlns="http://www.w3.org/2000/svg"
-          width="255"
-          height="17"
+          // width="255"
+          // height="17"
           viewBox="0 0 255 17"
           fill="none"
         >
@@ -70,6 +62,16 @@ function HeroSection() {
         <PrimaryBtn>Register</PrimaryBtn>
         <Timer />
       </div>
+
+      {/* STARS */}
+      <TwinkleStar
+        className="absolute left-[185px] top-[68px]"
+        star={whiteStar}
+      />
+      <TwinkleStar
+        className="absolute left-[571px] top-[605px]"
+        star={greyStar}
+      />
     </div>
   );
 }
