@@ -51,13 +51,13 @@ function PolicySection() {
             <h3 className="font-mons mb-[21px] w-full text-left text-xs font-bold leading-[26px] text-white sm:mb-[18px] sm:text-sm sm:leading-[30px]">
               Here are the terms of our Standard License:
             </h3>
-            <ul className="mb-4">
-              <li className="font-mons flex gap-x-[14px] text-xs font-normal leading-[21px] text-white sm:text-sm sm:leading-[30px]">
+            <ul className="mb-8 sm:mb-4">
+              <li className="font-mons flex gap-x-[14px] text-left text-xs font-normal leading-[21px] text-white sm:text-sm sm:leading-[30px]">
                 <img src={tick} alt="" className="mt-2 h-[17px] w-[17px]" />
                 The Standard License grants you a non-exclusive right to
                 navigate and register for our event
               </li>
-              <li className="font-mons flex gap-x-[14px] text-xs font-normal leading-[21px] text-white sm:text-sm sm:leading-[30px]">
+              <li className="font-mons flex gap-x-[14px] text-left text-xs font-normal leading-[21px] text-white sm:text-sm sm:leading-[30px]">
                 <img src={tick} alt="" className="mt-2 h-[17px] w-[17px]" />
                 You are licensed to use the item available at any free source
                 sites, for your project developement
@@ -67,7 +67,11 @@ function PolicySection() {
           </div>
         </div>
       </div>
-      <img src={policy} alt="" className="sm:h-[952px] sm:w-[583px] w-full h-full" />
+      <img
+        src={policy}
+        alt=""
+        className="h-full w-full sm:h-[952px] sm:w-[583px]"
+      />
     </div>
   );
 }
