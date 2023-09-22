@@ -8,7 +8,7 @@ import TwinkleStar from "./TwinkleStar";
 
 function Judging() {
   return (
-    <div className="border-b-borderColor pb-59px relative flex flex-col items-center overflow-hidden border-b-[1px] pl-0 pr-0 pt-[75px] sm:flex-row sm:items-start sm:gap-x-[40px] sm:pb-[100px] sm:pl-[66px] sm:pr-[105px]">
+    <div className="border-b-borderColor pb-59px relative flex flex-col items-center overflow-hidden border-b-[1px] pb-[59px] pl-0 pr-0 pt-[75px] sm:flex-row sm:items-start sm:gap-x-[40px] sm:pb-[100px] sm:pl-[66px] sm:pr-[105px]">
       <TwinkleStar className="left-[733px] top-[760px]" star={whiteStar} />
       <TwinkleStar className="left-[215px] top-[78px]" star={purpleStar} />
       <TwinkleStar className="left-[470px] top-[499px]" star={greyStar} />

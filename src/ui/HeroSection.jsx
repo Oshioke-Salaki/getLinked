@@ -11,11 +11,11 @@ import TwinkleStar from "./TwinkleStar";
 import Emojis from "./Emojis";
 function HeroSection() {
   return (
-    <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] px-[0px] pt-8 sm:pl-[130px] sm:pr-[55px]">
+    <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] px-[0px] pt-8 sm:h-[813px] sm:pl-[130px] sm:pr-[55px]">
       <h4 className="font-mons relative w-full text-center text-base font-bold text-white sm:text-right sm:text-[36px]">
         Igniting a Revolution in HR Innovation{" "}
         <svg
-          className="absolute right-[10px] top-[84%] m-0 h-[11px] w-[115px] sm:h-[17px] sm:w-[255px]"
+          className="absolute right-[10px] top-[120%] m-0 h-[11px] w-[115px] sm:h-[17px] sm:w-[255px]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 255 17"
           fill="none"
@@ -40,11 +40,11 @@ function HeroSection() {
           alt=""
           className="absolute left-[273px] top-[26px] h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
         />
-        <h1 className="mt-10 text-center text-[32px] font-bold  text-white sm:mt-[100px] sm:text-left sm:text-[80px] sm:leading-[90px]">
+        <h1 className="mt-10 text-center text-[32px] font-bold  text-white sm:mt-[100px] sm:text-left sm:text-[80px]">
           getlinked Tech
         </h1>
         <div className=" flex items-center justify-center sm:justify-start">
-          <h1 className="flex text-center text-[32px] font-bold  text-white sm:mt-[100px] sm:text-left sm:text-[80px] sm:leading-[90px]">
+          <h1 className="flex text-center text-[32px] font-bold  text-white sm:text-left sm:text-[80px]">
             Hackathon{" "}
             <span className="text-primaryColor ml-2 flex items-center sm:ml-3">
               1.0
