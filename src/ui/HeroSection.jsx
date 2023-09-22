@@ -2,6 +2,7 @@ import bulb from "../assets/bulb.png";
 import PrimaryBtn from "./PrimaryBtn";
 import Timer from "./Timer";
 import heroImg from "../assets/heroImg.png";
+import voidImg from "../assets/heroVoid.png";
 
 import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
@@ -16,8 +17,6 @@ function HeroSection() {
         <svg
           className="absolute right-[10px] top-[84%] m-0 h-[11px] w-[115px] sm:h-[17px] sm:w-[255px]"
           xmlns="http://www.w3.org/2000/svg"
-          // width="255"
-          // height="17"
           viewBox="0 0 255 17"
           fill="none"
         >
@@ -29,7 +28,7 @@ function HeroSection() {
         </svg>
       </h4>
       <div className="relative  flex flex-col items-center sm:items-start">
-        <div className="absolute bottom-0 right-0  top-[399px] z-0 flex h-[362px] w-full items-center justify-center sm:bottom-[-20px] sm:right-[-60px] sm:top-0 sm:h-full sm:w-[680] sm:max-w-[715px]">
+        <div className="absolute bottom-0 right-0 top-[399px]  z-0 hidden h-[362px] w-full items-center justify-center sm:bottom-[-20px] sm:right-[-60px] sm:top-0 sm:flex sm:h-full sm:w-[680] sm:max-w-[715px]">
           <TwinkleStar
             star={greyStar}
             className="absolute left-[15%] top-[5%]"
@@ -59,6 +58,10 @@ function HeroSection() {
         </p>
         <PrimaryBtn>Register</PrimaryBtn>
         <Timer />
+      </div>
+      <div className="block w-screen sm:hidden">
+        <img src={voidImg} alt="" className="ml-5 mt-[-5px]" />
+        <img src={heroImg} alt="" className="h-[362px] w-full grayscale " />
       </div>
 
       {/* STARS */}
