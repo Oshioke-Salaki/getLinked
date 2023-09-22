@@ -122,7 +122,7 @@ const TimelineSection = () => {
               <motion.div
                 variants={itemdisplay}
                 key={i}
-                className="flex w-full items-start justify-start gap-4 sm:hidden"
+                className="flex w-full items-start justify-start gap-4 text-white sm:hidden"
               >
                 <div className="flex flex-col items-center justify-center gap-1">
                   <img
