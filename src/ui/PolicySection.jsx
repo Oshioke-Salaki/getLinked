@@ -61,14 +61,33 @@ function PolicySection() {
       />
 
       {/* STARS */}
-      <TwinkleStar className="left-[514px] top-[159px]" star={greyStar} />
-      <TwinkleStar className="left-[733px] top-[274px]" star={darkPurple} />
-      <TwinkleStar className="left-[100px] top-[838px]" star={purpleStar} />
-      <TwinkleStar className="left-[1393px] top-[842px]" star={greyStar} />
-      <TwinkleStar className="left-[1265px] top-[260px]" star={whiteMini} />
-      <TwinkleStar className="left-[921px] top-[803px]" star={whiteMini} />
       <TwinkleStar
-        className="left-[991px] top-[697px]"
+        className="left-[286px] top-[43px] h-[8px] w-[8px] sm:left-[514px] sm:top-[159px] sm:h-8 sm:w-[26px]"
+        star={greyStar}
+      />
+      <TwinkleStar
+        className="left-[306px] top-[232px] h-[20px] w-[17px] sm:left-[733px] sm:top-[274px] sm:h-[28px] sm:w-[23px]"
+        star={darkPurple}
+      />
+      <TwinkleStar
+        className="left-[262px] top-[1051px] h-[8px] w-[7px] sm:left-[1265px] sm:top-[260px] sm:h-[18px] sm:w-[15px]"
+        star={whiteMini}
+      />
+      <TwinkleStar
+        className="left-[22px] top-[726px] h-[20px] w-[17px] sm:left-[100px] sm:top-[838px] sm:h-[36px] sm:w-[30px]"
+        star={purpleStar}
+      />
+      <TwinkleStar
+        className="left-[306px] top-[1342px] h-2 w-2 sm:left-[1393px] sm:top-[842px] sm:h-[32px] sm:w-[26px]"
+        star={greyStar}
+      />
+      <TwinkleStar
+        className="left-[88px] top-[1332px] h-[10px] w-[9px] sm:left-[921px] sm:top-[803px] sm:h-[18px] sm:w-[15px]"
+        star={whiteMini}
+      />
+
+      <TwinkleStar
+        className="left-[991px] top-[697px] hidden sm:flex"
         star={lightPurpleMini}
       />
     </div>

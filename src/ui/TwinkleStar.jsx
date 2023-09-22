@@ -11,7 +11,7 @@ function TwinkleStar({ className, star }) {
       viewport={{ once: true }}
       src={star}
       alt="star"
-      className={`absolute ${className}`}
+      className={`absolute ${className} animate-pulse duration-300`}
     />
   );
 }
