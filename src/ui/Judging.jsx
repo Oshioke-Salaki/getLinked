@@ -9,9 +9,6 @@ import TwinkleStar from "./TwinkleStar";
 function Judging() {
   return (
     <div className="border-b-borderColor pb-59px relative flex flex-col items-center overflow-hidden border-b-[1px] pb-[59px] pl-0 pr-0 pt-[75px] sm:flex-row sm:items-start sm:gap-x-[40px] sm:pb-[100px] sm:pl-[66px] sm:pr-[105px]">
-      <TwinkleStar className="left-[733px] top-[760px]" star={whiteStar} />
-      <TwinkleStar className="left-[215px] top-[78px]" star={purpleStar} />
-      <TwinkleStar className="left-[470px] top-[499px]" star={greyStar} />
       <img
         src={judgeImg}
         alt=""
@@ -52,6 +49,20 @@ function Judging() {
         </div>
         <PrimaryBtn>Read More</PrimaryBtn>
       </div>
+
+      {/* Stars */}
+      <TwinkleStar
+        className="left-[173px] top-[15px] h-[17px] w-[13px] sm:left-[215px] sm:top-[78px] sm:h-auto sm:w-auto"
+        star={purpleStar}
+      />
+      <TwinkleStar
+        className="left-[330px] top-[1046px] h-[12px] w-[10px] sm:left-[733px] sm:top-[760px] sm:h-auto sm:w-auto"
+        star={whiteStar}
+      />
+      <TwinkleStar
+        className="left-[212px] top-[221px] h-[12px] w-[10px] sm:left-[470px] sm:top-[499px] sm:h-auto sm:w-auto"
+        star={greyStar}
+      />
     </div>
   );
 }
