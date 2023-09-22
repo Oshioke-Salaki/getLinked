@@ -10,7 +10,7 @@ function Idea() {
       <img
         src={curlArr}
         alt=""
-        className="absolute left-[181px] top-[296px] sm:left-[689px] sm:top-[490px]"
+        className="absolute left-[181px] top-[296px] h-[23px] w-[19px] sm:left-[689px] sm:top-[490px] sm:h-[58px] sm:w-[49px]"
       />
       <img
         src={idea}
