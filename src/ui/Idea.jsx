@@ -6,7 +6,7 @@ import TwinkleStar from "./TwinkleStar";
 
 function Idea() {
   return (
-    <div className="border-b-borderColor relative flex flex-col items-center justify-normal gap-y-[58px] border-b-[1px] pb-[78px]  pl-[230px] pr-[148px] pt-[29px] sm:flex-row sm:items-start sm:justify-between sm:gap-x-[60px] sm:pt-[62px]">
+    <div className="border-b-borderColor relative flex flex-col items-center justify-normal gap-y-[58px] border-b-[1px] pb-[78px]  pl-0 pr-0 pt-[29px] sm:flex-row sm:items-start sm:justify-between sm:gap-x-[60px] sm:pl-[230px] sm:pr-[148px] sm:pt-[62px]">
       <TwinkleStar
         className="left-[117px] top-[223px]"
         star={lightPurpleStar}
