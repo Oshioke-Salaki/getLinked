@@ -25,7 +25,7 @@ function FaqSection() {
           We got answers to the questions that you might want to ask about
           getlinked Hackathon 1.0
         </p>
-        <div className="flex flex-col gap-y-[25px]">
+        <div className="flex flex-col gap-y-[13px] sm:gap-y-[25px]">
           <FaqItem>
             Can I work on a project I started before the hackathon?
           </FaqItem>
