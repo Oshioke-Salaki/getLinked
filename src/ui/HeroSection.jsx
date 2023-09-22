@@ -59,8 +59,8 @@ function HeroSection() {
         <PrimaryBtn>Register</PrimaryBtn>
         <Timer />
       </div>
-      <div className="block w-screen sm:hidden">
-        <img src={voidImg} alt="" className="ml-5 mt-[-5px]" />
+      <div className="relative block w-screen sm:hidden">
+        <img src={voidImg} alt="" className="absolute left-5 top-[-5px]" />
         <img src={heroImg} alt="" className="h-[362px] w-full grayscale " />
       </div>
 
