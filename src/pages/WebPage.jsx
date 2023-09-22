@@ -28,7 +28,7 @@ function WebPage() {
       <img
         src={heroVoid}
         alt=""
-        className="absolute right-[64px]  top-[257px] z-50 animate-pulse duration-300"
+        className="absolute right-[64px] top-[257px] z-50  hidden animate-pulse duration-300 sm:flex"
       />
       <img
         src={ruleFlare}
