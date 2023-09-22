@@ -30,10 +30,6 @@ const TimelineSection = () => {
 
   return (
     <section id="timeline" className="relative w-full pb-[109px] pt-[72px]">
-      <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
-      <TwinkleStar className="left-[1220px] top-[680px]" star={whiteStar} />
-      <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
-      <TwinkleStar className="left-[177px] top-[1160px]" star={greyStar} />
       <div className="overflow-hidden">
         <div className="flex w-full flex-col items-center px-[49px] sm:px-0">
           <div className="flex flex-col gap-y-[21px] sm:gap-y-4">
@@ -63,7 +59,7 @@ const TimelineSection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-[56px] flex w-full flex-col items-center justify-center gap-[40px] sm:mt-[91px] sm:gap-[20px]"
+            className="mt-[56px] flex w-full flex-col items-center justify-center gap-[27px] sm:mt-[91px] sm:gap-[40px]"
           >
             {/* DESKTOP VARIANT*/}
             {timelineInfo.map((item, i) => (
@@ -125,19 +121,19 @@ const TimelineSection = () => {
                 className="flex w-full items-start justify-start gap-4 text-white sm:hidden"
               >
                 <div className="flex h-full flex-col items-center gap-1">
-                  <img src={line} alt="-" className="h-auto object-contain" />
+                  <img src={line} alt="-" className="h-[77px]" />
                   <span className="bg-btnGradient flex h-5 w-5 items-center justify-center rounded-full text-sm font-bold text-white md:text-lg">
                     {i + 1}
                   </span>
                 </div>
-                <div className="flex h-full flex-col items-start justify-between">
+                <div className="flex h-full flex-col">
                   <div className="flex flex-col items-start justify-start gap-2">
                     <h2 className="text-primary text-sm font-bold text-[#d434f3] sm:text-lg">
                       {item.topic}
                     </h2>
                     <p className="text-sm font-normal">{item.content}</p>
                   </div>
-                  <p className="text-primary flex items-start justify-start text-sm font-bold text-[#d434f3] sm:text-lg">
+                  <p className="text-primary justify-self-end text-sm font-bold text-[#d434f3] sm:text-lg">
                     {item.date}
                   </p>
                 </div>
@@ -146,6 +142,12 @@ const TimelineSection = () => {
           </motion.div>
         </div>
       </div>
+
+      {/* STAR */}
+      <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
+      <TwinkleStar className="left-[1220px] top-[680px]" star={whiteStar} />
+      <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
+      <TwinkleStar className="left-[177px] top-[1160px]" star={greyStar} />
     </section>
   );
 };
