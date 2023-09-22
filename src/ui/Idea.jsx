@@ -18,7 +18,7 @@ function Idea() {
         className="h-[257px] w-[264px] sm:h-[477px] sm:w-[490px]"
       />
       <div className="mt-[131px] max-w-[535px]">
-        <h1 className="relative text-[32px] font-bold text-white">
+        <h1 className="relative text-center text-xl font-bold leading-[26px] text-white sm:text-left sm:text-[32px] sm:leading-9">
           Introduction to getlinked
           <br /> <span className="text-primaryColor">tech Hackathon 1.0</span>
         </h1>
