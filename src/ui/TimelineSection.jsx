@@ -135,11 +135,11 @@ const TimelineSection = () => {
                   </span>
                 </div>
                 <div className="flex flex-col items-start justify-start gap-2">
-                  <h2 className="text-primary text-sm font-bold sm:text-lg">
+                  <h2 className="text-primary text-sm font-bold text-[#d434f3] sm:text-lg">
                     {item.topic}
                   </h2>
                   <p className="text-sm font-normal">{item.content}</p>
-                  <p className="text-primary flex items-start justify-start text-sm font-bold sm:text-lg">
+                  <p className="text-primary flex items-start justify-start text-sm font-bold text-[#d434f3] sm:text-lg">
                     {item.date}
                   </p>
                 </div>
