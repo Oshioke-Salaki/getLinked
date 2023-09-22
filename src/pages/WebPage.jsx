@@ -30,7 +30,7 @@ function WebPage() {
       </div>
       <img
         src={flare2}
-        className="absolute right-0 top-0 z-20 bg-blend-hard-light"
+        className="absolute right-0 top-0 z-20 hidden bg-blend-hard-light sm:flex"
       />
       <img
         src={heroVoid}
