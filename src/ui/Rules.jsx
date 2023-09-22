@@ -6,8 +6,7 @@ import TwinkleStar from "./TwinkleStar";
 function Rules() {
   return (
     <div className="border-b-borderColor pb-46px relative flex flex-col-reverse items-center justify-start gap-x-[60px] gap-y-[10px] overflow-hidden border-b-[1px] pb-[46px] pl-0 pr-0 sm:flex-row sm:items-start sm:justify-between sm:pb-0 sm:pl-[184px] sm:pr-[50px]">
-      <TwinkleStar className="left-[439px] top-[116px]" star={greyStar} />
-      <TwinkleStar className="left-[741px] top-[405px]" star={whiteStar} />
+    
       <div className="mt-0 sm:mt-[138px] sm:max-w-[535px]">
         <h1 className="text-center text-xl font-bold leading-[27px] text-white sm:text-left sm:text-[32px] sm:leading-9">
           Rules and
@@ -27,6 +26,11 @@ function Rules() {
         alt=""
         className="mt-[-20px] h-[340px] w-[294px] sm:h-[664px] sm:w-[664px]"
       />
+
+
+      {/* Stars */}
+      <TwinkleStar className="left-[336px] sm:left-[439px] top-[442px] sm:top-[116px] sm:w-auto w-3 h-[14px] sm:h-auto" star={greyStar} />
+      <TwinkleStar className="sm:left-[741px] left-[43px] top-[185px] sm:top-[405px] sm:w-auto sm:h-auto" star={whiteStar} />
     </div>
   );
 }
