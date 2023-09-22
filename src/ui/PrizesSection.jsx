@@ -55,7 +55,7 @@ function PrizesSection() {
             src={medals}
             className="absolute left-[7px] h-[126px] w-[280px] sm:left-4 sm:h-[296px] sm:w-[660px]"
           />
-          <div className="flex gap-x-[13px] pt-[77px] sm:gap-x-[30px] sm:pt-[130px]">
+          <div className="flex gap-x-[13px] pt-[80px] sm:gap-x-[30px] sm:pt-[130px]">
             <SecondPrizeBadge />
             <FirstPrizeBadge />
             <ThirdPrizeBadge />
