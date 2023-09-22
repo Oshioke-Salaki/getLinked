@@ -7,7 +7,7 @@ import phone from "../assets/phoneIcon.svg";
 import address from "../assets/locationIcon.svg";
 function FooterSection() {
   return (
-    <div className=" bg-[#100B20] pb-[50px] pl-[160px] pr-[150px] pt-[70px]">
+    <div className=" bg-[#100B20] pb-[50px] pl-[220px] pr-[206px] pt-[70px]">
       <div className="flex">
         <div className="mr-[120px] max-w-[412px] text-white">
           <FooterLogo />
