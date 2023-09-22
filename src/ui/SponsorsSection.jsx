@@ -6,6 +6,10 @@ import sponsor5 from "../assets/sponsor5.png";
 import sponsor6 from "../assets/sponsor6.png";
 import flareLeft from "../assets/flare1.png";
 import flareRight from "../assets/flare4.png";
+import darkPurple from "../assets/starDarkPurple.svg";
+import purpleStar from "../assets/lightPurpleStar.svg";
+import whiteStar from "../assets/whiteStar.svg";
+import TwinkleStar from "./TwinkleStar";
 
 function SponsorsSection() {
   return (
@@ -48,6 +52,20 @@ function SponsorsSection() {
           <img src={sponsor6}></img>
         </div>
       </div>
+
+      {/* Stars */}
+      <TwinkleStar
+        className="left-[52px] top-[178px] h-[10px] w-[8px] sm:left-[207px] sm:top-[241px] sm:h-[36px] sm:w-[30px]"
+        star={darkPurple}
+      />
+      <TwinkleStar
+        className="left-[213px] top-[232px] h-[7px] w-[7px] sm:left-[843px] sm:top-[384px] sm:h-[25px] sm:w-[21px]"
+        star={purpleStar}
+      />
+      <TwinkleStar
+        className="left-[309px] top-[310px] h-[12px] w-[10px] sm:left-[840px] sm:top-[735px] sm:h-[32px] sm:w-[26px]"
+        star={whiteStar}
+      />
     </div>
   );
 }
