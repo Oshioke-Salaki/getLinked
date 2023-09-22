@@ -7,19 +7,10 @@ import TwinkleStar from "./TwinkleStar";
 function Idea() {
   return (
     <div className="border-b-borderColor relative flex flex-col items-center justify-normal gap-y-[58px] border-b-[1px] pb-[78px]  pl-0 pr-0 pt-[29px] sm:flex-row sm:items-start sm:justify-between sm:gap-x-[60px] sm:pl-[230px] sm:pr-[148px] sm:pt-[62px]">
-      <TwinkleStar
-        className="left-[117px] top-[223px]"
-        star={lightPurpleStar}
-      />
-      <TwinkleStar
-        className="right-[161px] top-[216px]"
-        star={darkPurplestar}
-      />
-
       <img
         src={curlArr}
         alt=""
-        className="absolute bottom-[62px] left-[689px]"
+        className="absolute left-[181px] top-[296px] sm:left-[689px] sm:top-[490px]"
       />
       <img src={idea} alt="" className="h-[477px] w-[490px]" />
       <div className="mt-[131px] max-w-[535px]">
@@ -36,6 +27,16 @@ function Idea() {
           that can change the world, that&apos;s what we&apos;re all about!
         </p>
       </div>
+
+      {/* STARS */}
+      <TwinkleStar
+        className="left-[117px] top-[223px]"
+        star={lightPurpleStar}
+      />
+      <TwinkleStar
+        className="right-[161px] top-[216px]"
+        star={darkPurplestar}
+      />
     </div>
   );
 }
