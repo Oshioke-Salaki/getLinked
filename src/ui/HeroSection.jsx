@@ -1,4 +1,3 @@
-import chain from "../assets/chain.png";
 import bulb from "../assets/bulb.png";
 import PrimaryBtn from "./PrimaryBtn";
 import Timer from "./Timer";
@@ -7,8 +6,8 @@ import heroImg from "../assets/heroImg.png";
 import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
 
-import spark from "../assets/spark.png";
 import TwinkleStar from "./TwinkleStar";
+import Emojis from "./Emojis";
 function HeroSection() {
   return (
     <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] px-[0px] pt-8 sm:pl-[130px] sm:pr-[55px]">
@@ -46,14 +45,13 @@ function HeroSection() {
           getlinked Tech
         </h1>
         <div className=" flex items-center justify-start">
-          <h1 className="flex text-[80px] font-bold leading-[90px] text-white">
+          <h1 className="flex text-center text-[32px] font-bold  text-white sm:mt-[100px] sm:text-left sm:text-[80px] sm:leading-[90px]">
             Hackathon{" "}
             <span className="text-primaryColor ml-3 flex items-center">
               1.0
             </span>
           </h1>
-          <img src={chain} alt="" className="h-[86px] w-[86px]" />
-          <img src={spark} alt="" className="h-[86px] w-[86px]" />
+          <Emojis />
         </div>
         <p className="font-mons mb-[41px] text-xl font-normal leading-8 text-white">
           Participate in getlinked tech Hackathon 2023 stand
