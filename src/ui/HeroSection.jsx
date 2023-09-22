@@ -11,8 +11,8 @@ import spark from "../assets/spark.png";
 import TwinkleStar from "./TwinkleStar";
 function HeroSection() {
   return (
-    <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] px-[33px] pt-8 sm:pl-[130px] sm:pr-[55px]">
-      <h4 className="font-mons relative w-full text-base font-bold text-white sm:text-right sm:text-[36px]">
+    <div className="border-b-borderColor relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] px-[0px] pt-8 sm:pl-[130px] sm:pr-[55px]">
+      <h4 className="font-mons relative w-full text-center text-base font-bold text-white sm:text-right sm:text-[36px]">
         Igniting a Revolution in HR Innovation{" "}
         <svg
           className="absolute right-[10px] top-[84%] m-0 h-[11px] w-[115px] sm:h-[17px] sm:w-[255px]"
@@ -42,7 +42,7 @@ function HeroSection() {
           alt=""
           className="absolute left-[516px] top-[45px] h-[73px] w-[53px] items-end"
         />
-        <h1 className="mt-[100px] text-[80px] font-bold leading-[90px] text-white">
+        <h1 className="mt-10 text-center text-[32px] font-bold  text-white sm:mt-[100px] sm:text-left sm:text-[80px] sm:leading-[90px]">
           getlinked Tech
         </h1>
         <div className=" flex items-center justify-start">
