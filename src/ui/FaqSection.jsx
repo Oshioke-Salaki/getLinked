@@ -16,7 +16,7 @@ function FaqSection() {
         className="left-[819px] top-[253px]"
         star={lightPurpleStar}
       />
-      <div className="max-w-[427px]">
+      <div className="px-[48px] sm:max-w-[427px] sm:px-0">
         <h1 className="text-5 mt-0 font-bold text-white sm:mt-[94px] sm:text-[32px]">
           Frequently ask
           <br /> <span className="text-primaryColor">Question</span>
