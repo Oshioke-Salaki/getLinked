@@ -63,7 +63,7 @@ const TimelineSection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-[56px] flex w-full flex-col items-center justify-center gap-3 sm:mt-[91px]"
+            className="mt-[56px] flex w-full flex-col items-center justify-center gap-[40px] sm:mt-[91px] sm:gap-[20px]"
           >
             {/* DESKTOP VARIANT*/}
             {timelineInfo.map((item, i) => (
