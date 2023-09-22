@@ -144,10 +144,18 @@ const TimelineSection = () => {
       </div>
 
       {/* STAR */}
-      <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
-      <TwinkleStar className="left-[1220px] top-[680px]" star={whiteStar} />
-      <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
-      <TwinkleStar className="left-[177px] top-[1160px]" star={greyStar} />
+      <TwinkleStar
+        className="left-[82px] top-[188px] h-[16px] w-[14px] sm:left-[338px] sm:top-[226px] sm:h-auto sm:w-auto"
+        star={darkPurpleStar}
+      />
+      <TwinkleStar
+        className="left-[285px] top-[568px] h-[12px] w-[10px] sm:left-[1220px] sm:top-[680px] sm:h-auto sm:w-auto"
+        star={whiteStar}
+      />
+      <TwinkleStar
+        className="left-[22px] top-[1003px] h-[12px] w-[10px] sm:left-[177px] sm:top-[1160px] sm:h-auto sm:w-auto"
+        star={greyStar}
+      />
     </section>
   );
 };
