@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 
+// STAR COMPONENT THAT RECEIVES CLASSES(top and left/right) and STAR IMG SRC
 function TwinkleStar({ className, star }) {
   return (
     <motion.img

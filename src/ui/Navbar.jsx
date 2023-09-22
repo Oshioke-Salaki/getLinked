@@ -8,9 +8,7 @@ function Navbar() {
       <Logo />
       <div className="flex gap-[121px]">
         <NavLinks />
-        <PrimaryBtn>
-          <span>Register</span>
-        </PrimaryBtn>
+        <PrimaryBtn>Register</PrimaryBtn>
       </div>
     </nav>
   );

@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
+/* IMPORT CLASHDISPLAY FONT */
 @font-face {
   font-family: "clash";
   src: url("/ClashDisplay-Variable.ttf");
 }
 @tailwind utilities;
 
-/* SCROLLBAR */
+/* SCROLLBAR STYLES*/
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

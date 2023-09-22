@@ -1,14 +1,27 @@
+import useTime from "../hooks/useTime";
+
+// TIMER COMPONENT ON THE HERO SECTION
 function Timer() {
+  const { hours, mins, secs } = useTime();
+
+  // TIME format function to add a '0' at the beginning if needed
+  const timeFormatter = (val) => {
+    return val.toString().padStart(2, "0");
+  };
+
   return (
     <div className="font-unica mb-[95px] mt-[50px] flex items-center gap-[20px]">
-      <h5 className="leading[85px] text-[64px] text-white">
-        00<span className="font-mons leading[18px] text-sm">H</span>
+      <h5 className="sm:leading[85px] text-[48px] font-normal leading-[64px] text-white sm:text-[64px]">
+        {timeFormatter(hours)}
+        <span className="font-mons leading[18px] text-sm font-normal">H</span>
       </h5>
-      <h5 className="leading[85px] text-[64px] text-white">
-        00<span className="font-mons leading[18px] text-sm">M</span>
+      <h5 className="sm:leading[85px] text-[48px] font-normal leading-[64px] text-white sm:text-[64px]">
+        {timeFormatter(mins)}
+        <span className="font-mons leading[18px] text-sm font-normal">M</span>
       </h5>
-      <h5 className="leading[85px] text-[64px] text-white">
-        00<span className="font-mons leading[18px] text-sm">S</span>
+      <h5 className="sm:leading[85px] text-[48px] font-normal leading-[64px] text-white sm:text-[64px]">
+        {timeFormatter(secs)}
+        <span className="font-mons leading[18px] text-sm font-normal">S</span>
       </h5>
     </div>
   );
