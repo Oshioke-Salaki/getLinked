@@ -34,11 +34,11 @@ function Idea() {
 
       {/* STARS */}
       <TwinkleStar
-        className="left-[117px] top-[223px]"
+        className="left-[57px] top-[111px] h-[13px] w-[11px] sm:left-[117px] sm:top-[223px] sm:h-auto sm:w-auto"
         star={lightPurpleStar}
       />
       <TwinkleStar
-        className="right-[161px] top-[216px]"
+        className="right-[50px] top-[365px] h-[10px] w-[8x] sm:right-[161px] sm:top-[216px] sm:h-auto sm:w-auto"
         star={darkPurplestar}
       />
     </div>

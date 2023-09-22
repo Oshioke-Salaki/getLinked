@@ -40,7 +40,7 @@ function WebPage() {
       <img
         src={ruleFlare}
         alt=""
-        className="absolute top-[1319px] bg-blend-hard-light"
+        className="absolute top-[1449px] bg-blend-hard-light sm:top-[1319px]"
       />
       <img
         src={ruleFlareRight}
