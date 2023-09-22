@@ -30,7 +30,7 @@ function HeroSection() {
         </svg>
       </h4>
       <div className="relative  flex flex-col">
-        <div className="absolute bottom-[-20px] right-[-60px] z-0 flex h-full w-[680] max-w-[715px] items-center justify-center">
+        <div className="absolute bottom-0 right-0  top-[399px] z-0 flex h-[362px] w-full items-center justify-center sm:bottom-[-20px] sm:right-[-60px] sm:top-0 sm:h-full sm:w-[680] sm:max-w-[715px]">
           <TwinkleStar
             star={greyStar}
             className="absolute left-[15%] top-[5%]"
