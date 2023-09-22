@@ -51,8 +51,11 @@ function PrizesSection() {
           className="mb-[51px] flex h-[282px] w-[321px] sm:hidden"
         />
         <div className="relative w-fit">
-          <img src={medals} className="absolute left-4 h-[296px] w-[660px]" />
-          <div className="flex gap-x-[30px] pt-[130px]">
+          <img
+            src={medals}
+            className="absolute left-[7px] h-[126px] w-[280px] sm:left-4 sm:h-[296px] sm:w-[660px]"
+          />
+          <div className="flex gap-x-[13px] pt-[62px] sm:gap-x-[30px] sm:pt-[130px]">
             <SecondPrizeBadge />
             <FirstPrizeBadge />
             <ThirdPrizeBadge />
