@@ -1,9 +1,13 @@
 function ThirdPrizeBadge() {
   return (
-    <div className="font-mons mt-[80px] h-fit max-h-[296px] overflow-hidden rounded-lg border-[1px] border-solid border-[#D434FE] bg-[#d434fe1e] px-[25px] pb-[33px] pt-[90px] text-center">
-      <h2 className="text-[36px] font-bold text-white ">3rd</h2>
-      <h6 className="mb-[13px] text-2xl font-semibold text-white">Runner</h6>
-      <h1 className="text-[32px] font-bold text-[#903AFF]">N150,000</h1>
+    <div className="font-mons mt-[80px] h-fit max-h-[126px] overflow-hidden rounded-lg border-[1px] border-solid border-[#D434FE] bg-[#d434fe1e] px-[9px] pb-[23px] pt-[41px] text-center sm:max-h-[296px] sm:px-[25px] sm:pb-[33px] sm:pt-[90px]">
+      <h2 className="text-xs font-bold text-white sm:text-[36px] ">3rd</h2>
+      <h6 className="text-xs font-semibold text-white sm:mb-[13px] sm:text-2xl">
+        Runner
+      </h6>
+      <h1 className="text-sm font-bold text-[#903AFF] sm:text-[32px]">
+        N150,000
+      </h1>
     </div>
   );
 }
