@@ -53,8 +53,9 @@ const TimelineSection = () => {
               viewport={{ once: true }}
               className="text-center text-sm font-normal text-white"
             >
-              Here is the breakdown of the time we anticipate <br /> using for
-              the upcoming event.
+              Here is the breakdown of the time we anticipate{" "}
+              <br className="hidden sm:inline-block" /> using for the upcoming
+              event.
             </motion.p>
           </div>
           <motion.div
