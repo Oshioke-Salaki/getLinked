@@ -8,12 +8,16 @@ import TwinkleStar from "./TwinkleStar";
 
 function Judging() {
   return (
-    <div className="border-b-borderColor relative flex gap-x-[40px] overflow-hidden border-b-[1px] pb-[100px] pl-[66px] pr-[105px] pt-[75px]">
+    <div className="border-b-borderColor pb-59px relative flex flex-col items-center overflow-hidden border-b-[1px] pl-0 pr-0 pt-[75px] sm:flex-row sm:items-start sm:gap-x-[40px] sm:pb-[100px] sm:pl-[66px] sm:pr-[105px]">
       <TwinkleStar className="left-[733px] top-[760px]" star={whiteStar} />
       <TwinkleStar className="left-[215px] top-[78px]" star={purpleStar} />
       <TwinkleStar className="left-[470px] top-[499px]" star={greyStar} />
-      <img src={judgeImg} alt="" className="mt-[95px] h-[622px] w-[710px]" />
-      <div className="max-w-[535px]">
+      <img
+        src={judgeImg}
+        alt=""
+        className="mt-0 h-[275px] w-[332px] sm:mt-[95px] sm:h-[622px] sm:w-[710px]"
+      />
+      <div className="max-w-[303px] sm:max-w-[535px]">
         <h1 className="mb-[21px] text-[32px] font-bold text-white">
           Judging Criteria
           <br /> <span className="text-primaryColor">Key attributes</span>
