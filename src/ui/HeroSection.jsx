@@ -38,7 +38,7 @@ function HeroSection() {
         <img
           src={bulb}
           alt=""
-          className="absolute left-[273px] top-[26px] h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
+          className="absolute left-[267px] top-[28px] h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
         />
         <h1 className="mt-10 text-center text-[32px] font-bold  text-white sm:mt-[100px] sm:text-left sm:text-[80px]">
           getlinked Tech
@@ -71,7 +71,7 @@ function HeroSection() {
       {/* STARS */}
       <TwinkleStar
         star={greyStar}
-        className="absolute left-[63px] top-[81px] flex h-[8px] w-[6px] sm:hidden"
+        className="absolute left-[321px] top-[81px] flex h-[8px] w-[6px] sm:hidden"
       />
       <TwinkleStar
         className="absolute left-[120px] top-[81px] h-[12px] w-[10px] sm:left-[185px] sm:top-[68px] sm:h-auto sm:w-auto"
