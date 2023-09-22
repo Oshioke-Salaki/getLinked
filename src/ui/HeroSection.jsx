@@ -55,7 +55,7 @@ function HeroSection() {
         </div>
         <p className="font-mons mb-6 px-[63px] text-[13px] font-normal leading-[22px] text-white sm:mb-[41px] sm:px-0 sm:text-xl sm:leading-8">
           Participate in getlinked tech Hackathon 2023 stand
-          <br /> a chance to win a Big prize
+          <br className="hidden sm:inline-block" /> a chance to win a Big prize
         </p>
         <PrimaryBtn>Register</PrimaryBtn>
         <Timer />
