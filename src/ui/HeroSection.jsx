@@ -60,7 +60,7 @@ function HeroSection() {
         <Timer />
       </div>
       <div className="relative block w-screen sm:hidden">
-        <img src={voidImg} alt="" className="absolute left-5 top-[-5px]" />
+        <img src={voidImg} alt="" className="absolute left-5 top-[-5px] z-40" />
         <img src={heroImg} alt="" className="h-[362px] w-full grayscale " />
       </div>
 
