@@ -81,14 +81,14 @@ const TimelineSection = () => {
                   }`}
                 >
                   <h2
-                    className={`text-primaryColor max-w-[450px] text-lg font-bold lg:text-2xl ${
+                    className={`text-primaryColor font-mons max-w-[450px] text-lg font-bold lg:text-2xl ${
                       item.reverse === false ? "text-left" : "text-right"
                     }`}
                   >
                     {item.topic}
                   </h2>
                   <p
-                    className={`max-w-[400px] text-sm font-normal text-white ${
+                    className={`font-mons max-w-[400px] text-sm font-normal text-white ${
                       item.reverse === false ? "text-left" : "text-right"
                     }`}
                   >
@@ -101,7 +101,7 @@ const TimelineSection = () => {
                     alt="-"
                     className="tab:h-[137px] h-[77px] object-contain"
                   />
-                  <span className="bg-btnGradient flex h-14 w-14 items-center justify-center rounded-full text-2xl font-bold text-white">
+                  <span className="bg-btnGradient font-mons flex h-14 w-14 items-center justify-center rounded-full text-2xl font-bold text-white">
                     {i + 1}
                   </span>
                 </div>
