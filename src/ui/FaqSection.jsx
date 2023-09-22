@@ -6,7 +6,7 @@ import darkPurpleStar from "../assets/starDarkPurple.svg";
 
 function FaqSection() {
   return (
-    <div className="border-b-borderColor relative flex gap-x-[25px] overflow-hidden border-b-[1px] pb-[63px]  pl-[215px] pr-[101px] pt-[70px]">
+    <div className="border-b-borderColor relative flex flex-col items-center gap-x-[25px] overflow-hidden border-b-[1px] pb-[49px] pl-0 pr-0 pt-[60px] text-center sm:flex-row  sm:items-start sm:pb-[63px] sm:pl-[215px] sm:pr-[101px] sm:pt-[70px] sm:text-left">
       <TwinkleStar className="left-[183px] top-[110px]" star={darkPurpleStar} />
       <TwinkleStar
         className="left-[1020px] top-[97px]"
@@ -17,7 +17,7 @@ function FaqSection() {
         star={lightPurpleStar}
       />
       <div className="max-w-[427px]">
-        <h1 className="mt-[94px] text-[32px] font-bold text-white">
+        <h1 className="text-5 mt-0 font-bold text-white sm:mt-[94px] sm:text-[32px]">
           Frequently ask
           <br /> <span className="text-primaryColor">Question</span>
         </h1>
