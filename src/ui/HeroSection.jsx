@@ -53,7 +53,7 @@ function HeroSection() {
           </h1>
           <Emojis />
         </div>
-        <p className="font-mons mb-[41px] text-xl font-normal leading-8 text-white">
+        <p className="font-mons mb-[41px] px-[63px] text-[13px] font-normal leading-[22px] text-white sm:px-0 sm:text-xl sm:leading-8">
           Participate in getlinked tech Hackathon 2023 stand
           <br /> a chance to win a Big prize
         </p>
