@@ -7,11 +7,11 @@ import phone from "../assets/phoneIcon.svg";
 import address from "../assets/locationIcon.svg";
 function FooterSection() {
   return (
-    <div className=" bg-[#100B20] pb-[50px] pl-[220px] pr-[206px] pt-[70px]">
-      <div className="flex">
-        <div className="mr-[120px] max-w-[412px] text-white">
+    <div className=" bg-[rgb(16,11,32)] pb-[50px] pl-[68px] pr-[51px] pt-[51] sm:pl-[220px] sm:pr-[206px] sm:pt-[70px]">
+      <div className="flex flex-col sm:flex-row">
+        <div className="mr-0 text-white sm:mr-[120px] sm:max-w-[412px]">
           <FooterLogo />
-          <p className="font-mons mb-[74px] mt-[6px] text-xs font-normal leading-[21px]">
+          <p className="font-mons mb-[39px] mt-[6px] text-xs font-normal leading-[21px] sm:mb-[74px]">
             Getlinked Tech Hackathon is a technology innovation program
             established by a group of organizations with the aim of showcasing
             young and talented individuals in the field of technology
@@ -21,7 +21,7 @@ function FooterSection() {
             Privacy Policy
           </h1>
         </div>
-        <div className="mr-[120px]">
+        <div className="mb-[61px] mr-0 mt-8 sm:mr-[120px] sm:mt-0">
           <h1 className="mb-2 text-sm font-semibold leading-6 text-[#D434FE]">
             Useful Links
           </h1>
