@@ -35,14 +35,14 @@ const TimelineSection = () => {
       <TwinkleStar className="left-[338px] top-[226px]" star={darkPurpleStar} />
       <TwinkleStar className="left-[177px] top-[1160px]" star={greyStar} />
       <div className="overflow-hidden">
-        <div className="flex w-full flex-col items-center justify-center gap-16">
-          <div className="flex flex-col gap-4">
+        <div className="flex w-full flex-col items-center px-[49px] sm:px-0">
+          <div className="flex flex-col gap-y-[21px] sm:gap-y-4">
             <motion.h2
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 2 }}
               viewport={{ once: true }}
-              className="w-full text-center text-3xl font-bold text-white"
+              className="w-full text-center text-xl font-bold leading-[26px] text-white sm:text-3xl sm:leading-9"
             >
               Timeline
             </motion.h2>
@@ -62,14 +62,14 @@ const TimelineSection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-[91px] flex w-full flex-col items-center justify-center gap-3"
+            className="mt-[56px] flex w-full flex-col items-center justify-center gap-3 sm:mt-[91px]"
           >
-            {/* DESKTOP */}
+            {/* DESKTOP VARIANT*/}
             {timelineInfo.map((item, i) => (
               <motion.div
                 variants={itemdisplay}
                 key={i}
-                className={`flex w-full items-end justify-center gap-20 ${
+                className={` hidden w-full items-end justify-center gap-20 sm:flex ${
                   item.reverse === false ? "flex-row-reverse" : "flex-row"
                 }`}
               >
@@ -116,12 +116,12 @@ const TimelineSection = () => {
                 </p>
               </motion.div>
             ))}
-            {/* MOBILE */}
-            {/* {timelineInfo.map((item, i) => (
+            {/* MOBILE vARIANT*/}
+            {timelineInfo.map((item, i) => (
               <motion.div
                 variants={itemdisplay}
                 key={i}
-                className="tab:hidden flex w-full items-start justify-start gap-4"
+                className="flex w-full items-start justify-start gap-4 sm:hidden"
               >
                 <div className="flex flex-col items-center justify-center gap-1">
                   <img
@@ -143,7 +143,7 @@ const TimelineSection = () => {
                   </p>
                 </div>
               </motion.div>
-            ))} */}
+            ))}
           </motion.div>
         </div>
       </div>
