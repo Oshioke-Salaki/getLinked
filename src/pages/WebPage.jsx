@@ -21,7 +21,7 @@ function WebPage() {
   return (
     <div className="bg-bgMain relative h-fit overflow-x-hidden">
       <div
-        className="absolute left-0 top-0 h-[442px] w-[396px] bg-blend-hard-light sm:h-auto sm:w-auto"
+        className="absolute left-0 top-0 hidden h-[442px] w-[396px] bg-blend-hard-light sm:flex sm:h-auto sm:w-auto"
         style={{
           background: `url(${flare}) no-repeat`,
         }}
@@ -30,7 +30,7 @@ function WebPage() {
       </div>
       <img
         src={flare2}
-        className="absolute right-0 top-0 z-20 hidden bg-blend-hard-light sm:flex"
+        className="absolute right-0 top-0 z-20 flex bg-blend-hard-light sm:hidden"
       />
       <img
         src={heroVoid}
