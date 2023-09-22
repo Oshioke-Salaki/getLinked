@@ -7,15 +7,6 @@ import darkPurpleStar from "../assets/starDarkPurple.svg";
 function FaqSection() {
   return (
     <div className="border-b-borderColor relative flex flex-col items-center gap-y-[66px] overflow-hidden border-b-[1px] pb-[49px] pl-0 pr-0 pt-[60px] text-center sm:flex-row sm:items-start  sm:gap-x-[25px] sm:pb-[63px] sm:pl-[215px] sm:pr-[101px] sm:pt-[70px] sm:text-left">
-      <TwinkleStar className="left-[183px] top-[110px]" star={darkPurpleStar} />
-      <TwinkleStar
-        className="left-[1020px] top-[97px]"
-        star={lightPurpleStar}
-      />
-      <TwinkleStar
-        className="left-[819px] top-[253px]"
-        star={lightPurpleStar}
-      />
       <div className="px-[48px] sm:max-w-[427px] sm:px-0">
         <h1 className="text-5 mt-0 font-bold text-white sm:mt-[94px] sm:text-[32px]">
           Frequently ask
@@ -44,6 +35,20 @@ function FaqSection() {
         src={faq}
         alt=""
         className="h-[327px] w-[327px] sm:h-[741px] sm:w-[741px]"
+      />
+
+      {/* STARS */}
+      <TwinkleStar
+        className="left-[59px] top-[47px] h-[22px] w-[18px] sm:left-[183px] sm:top-[110px] sm:h-auto sm:w-auto"
+        star={darkPurpleStar}
+      />
+      <TwinkleStar
+        className="left-[1020px] top-[97px]"
+        star={lightPurpleStar}
+      />
+      <TwinkleStar
+        className="left-[819px] top-[253px]"
+        star={lightPurpleStar}
       />
     </div>
   );
