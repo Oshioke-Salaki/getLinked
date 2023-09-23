@@ -29,7 +29,7 @@ function RegisterPage() {
       <div className="hidden sm:block">
         <Navbar hasBorder={false} />
       </div>
-      <main className="relative flex h-full flex-col items-center justify-end px-[46px] pt-[43px] sm:flex-row sm:items-start sm:pr-[104px]">
+      <main className="relative flex h-full flex-col items-center justify-end pt-[43px] sm:flex-row sm:items-start sm:pr-[104px]">
         <h1 className="mb-[31px] block w-full pl-[64px] text-left text-[15px] font-bold text-primaryColor sm:hidden">
           Register
         </h1>
