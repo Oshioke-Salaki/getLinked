@@ -1,10 +1,10 @@
 function FirstPrizeBadge() {
   return (
-    <div className="font-mons h-fit max-h-[147px] overflow-hidden rounded-lg border-[1px] border-solid border-[#903AFF] bg-[#903aff1e] px-2 pb-4 pt-[70px] text-center sm:mt-[30px] sm:max-h-[374px] sm:px-[23px] sm:pb-[21px] sm:pt-[111px]">
-      <h2 className="text-xs font-bold text-white sm:mt-[30px] sm:text-[40px]">
+    <div className="h-fit max-h-[147px] overflow-hidden rounded-lg border-[1px] border-solid border-[#903AFF] bg-[#903aff1e] px-2 pb-4 pt-[70px] text-center font-mons sm:mt-[30px] sm:max-h-[374px] sm:px-[23px] sm:pb-[21px] sm:pt-[110px]">
+      <h2 className="text-xs font-bold leading-[26px] text-white sm:mt-[30px] sm:text-[40px] sm:leading-[87px]">
         1st
       </h2>
-      <h6 className="text-xs font-semibold text-white sm:mb-[15px] sm:text-2xl">
+      <h6 className="mt-[-20px] text-xs font-semibold leading-[26px] text-white sm:mb-0 sm:text-2xl sm:leading-[52px]">
         Runner
       </h6>
       <h1 className="text-sm font-bold leading-[30px] text-[#903AFF] sm:text-[32px] sm:leading-[69px]">
