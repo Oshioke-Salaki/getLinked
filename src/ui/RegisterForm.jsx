@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import emoji from "../assets/walk.png";
 import dash from "../assets/dashUndelIne.svg";
 import SecondaryButton from "./SecondaryButton";
 
-function RegisterForm() {
+function RegisterForm({ showModal }) {
   return (
     <form
       action=""
@@ -95,12 +96,17 @@ function RegisterForm() {
         Please review your registration details before submitting
       </h5>
       <div className="mb-[22px] flex gap-x-[10px]">
-        <input type="checkbox" name="" id="" className="h-[14px] w-[14px]" />
+        <input
+          type="checkbox"
+          name=""
+          id=""
+          className="h-[14px] w-[14px] bg-inherit"
+        />
         <h6 className="font-mons text-xs font-normal text-white">
           I agreed with the event terms and conditions and privacy policy
         </h6>
       </div>
-      <SecondaryButton>Register Now</SecondaryButton>
+      <SecondaryButton showModal={showModal}>Register Now</SecondaryButton>
     </form>
   );
 }

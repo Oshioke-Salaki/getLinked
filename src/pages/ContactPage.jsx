@@ -7,7 +7,7 @@ import linkedIn from "../assets/linkedin.svg";
 
 function ContactPage() {
   return (
-    <div className="overflow-x-hidden bg-[#150E28]">
+    <div className="overflow-x-hidden bg-[#150E28] ">
       <Navbar />
       <main className="flex h-full justify-center gap-x-[225px] pb-[115px] pl-[188px] pr-[208px] pt-[115px]">
         <div className="mt-[56px] text-white">
