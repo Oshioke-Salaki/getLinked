@@ -24,7 +24,8 @@ function RegisterPage() {
       }`}
     >
       {/* {showModal && <Modal />} */}
-      {showModal && createPortal(<Modal />, document.body)}
+      {showModal &&
+        createPortal(<Modal setShowModal={setShowModal} />, document.body)}
       <div className="hidden sm:block">
         <Navbar hasBorder={false} />
       </div>
