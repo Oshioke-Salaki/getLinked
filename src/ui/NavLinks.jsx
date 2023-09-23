@@ -8,7 +8,6 @@ function NavLinks() {
 
   const [atContactPage, setAtContactPage] = useState(() => {
     if (pathname === "/contact") return true;
-
     return false;
   });
 
@@ -23,9 +22,13 @@ function NavLinks() {
       <li className="text-base font-normal text-white">Overview</li>
       <li className="text-base font-normal text-white">FAQs</li>
       <li
-        className={`text-base font-normal text-white ${
-          atContactPage && "text-6xl"
-        }`}
+        className={`text-base font-normal text-white`}
+        style={
+          atContactPage && {
+            background: "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
+            backgroundClip: "text",
+          }
+        }
       >
         <NavLink to="contact">Contact</NavLink>
       </li>
