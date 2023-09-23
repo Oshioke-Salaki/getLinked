@@ -24,7 +24,10 @@ const MobileNavbar = ({ setToggle }) => {
     <div
       className={`absolute left-0 top-0 z-[80] flex h-screen w-[100%] list-none flex-col items-center justify-center  bg-[##150E28] text-center text-white md:hidden lg:hidden`}
     >
-      <div className="relative h-fit w-fit">
+      <div
+        className="absolute right-[51px] top-[39px] h-fit w-fit"
+        onClick={toggleNav}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="11"
@@ -39,11 +42,7 @@ const MobileNavbar = ({ setToggle }) => {
           />
         </svg>
 
-        <img
-          src={close}
-          alt=""
-          className="absolute right-[51px] top-[39px] h-[23px] w-[23px]"
-        />
+        <img src={close} alt="" className="h-[23px] w-[23px]" />
       </div>
 
       <motion.div
