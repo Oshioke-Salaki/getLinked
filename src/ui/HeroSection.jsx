@@ -1,5 +1,5 @@
 import bulb from "../assets/bulb.png";
-import PrimaryBtn from "./PrimaryBtn";
+// import PrimaryBtn from "./PrimaryBtn";
 import Timer from "./Timer";
 import heroImg from "../assets/heroImg.png";
 import voidImg from "../assets/heroVoid.png";
@@ -9,6 +9,7 @@ import greyStar from "../assets/greyStar.svg";
 
 import TwinkleStar from "./TwinkleStar";
 import Emojis from "./Emojis";
+import { NavLink } from "react-router-dom";
 function HeroSection() {
   return (
     <div className="relative flex h-fit flex-col overflow-x-hidden overflow-y-hidden border-b-[1px] border-b-borderColor px-[0px] pt-8 sm:h-[813px] sm:pl-[130px] sm:pr-[55px]">
@@ -56,7 +57,15 @@ function HeroSection() {
           Participate in getlinked tech Hackathon 2023 stand
           <br className="hidden sm:inline-block" /> a chance to win a Big prize
         </p>
-        <PrimaryBtn>Register</PrimaryBtn>
+        <button
+          className=" inline-block rounded px-[46px] py-[15px] font-mons text-[13px] font-normal text-white sm:px-[52px] sm:py-[17px] sm:text-base"
+          style={{
+            background:
+              "linear-gradient(270deg, rgb(144, 58, 255) 0%, rgb(212, 52, 254) 56.42%, rgb(255, 38, 185) 99.99%, rgb(254, 52, 185) 100%)",
+          }}
+        >
+          <NavLink to={"/register"}>Register</NavLink>
+        </button>
         <Timer />
       </div>
       <div className="relative block w-screen sm:hidden">
