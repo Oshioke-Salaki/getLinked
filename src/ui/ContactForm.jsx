@@ -1,6 +1,12 @@
+import { useState } from "react";
 import PrimaryBtn from "./PrimaryBtn";
 
 function ContactForm() {
+  const [email, setEmail] = useState("");
+  const [phone_number, setPhone_number] = useState("");
+  const [first_name, setFirst_name] = useState("");
+  const [message, setMessage] = useState("");
+
   return (
     <form
       action=""
@@ -16,16 +22,22 @@ function ContactForm() {
       </p>
       <input
         type="text"
+        value={first_name}
+        onChange={(e) => setFirst_name(e.target.value)}
         placeholder="First Name"
         className="w-full rounded border-[1px] border-solid border-white bg-transparent px-[29px] py-[14px] font-mons text-base font-normal text-white placeholder:text-white"
       />
       <input
         type="text"
         placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         className="my-[42px] w-full rounded border-[1px] border-solid border-white bg-transparent px-[29px] py-[14px] font-mons text-base font-normal text-white placeholder:text-white"
       />
       <textarea
         placeholder="Message"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
         className="mb-[31px] h-[160px] w-full rounded border-[1px] border-solid border-white bg-transparent px-[15px] py-[6px] font-mons text-base font-normal text-white placeholder:text-white sm:h-[119px]"
       ></textarea>
       <div className="flex w-full justify-center">

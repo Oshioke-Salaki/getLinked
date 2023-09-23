@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react";
-
 function SecondaryButton({ children, showModal, data }) {
   async function handleSubmit(data) {
     const res = await fetch(
