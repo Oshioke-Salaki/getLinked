@@ -14,6 +14,7 @@ function SecondaryButton({ children, showModal, data }) {
           },
         );
         const resq = await res.JSON();
+        console.log(data);
 
         return resq;
       } catch (err) {

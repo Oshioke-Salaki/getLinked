@@ -10,7 +10,7 @@ function ContactForm() {
       `https://backend.getlinked.ai/hackathon/contact-form`,
       {
         method: "POST",
-        headers: "Content-Type: application/json",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
           phone_number: "09051896629",
@@ -22,7 +22,7 @@ function ContactForm() {
     );
     const resq = await res.JSON();
 
-    return resq;
+    console.log(resq);
   }
 
   return (
