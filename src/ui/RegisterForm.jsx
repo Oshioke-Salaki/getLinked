@@ -176,7 +176,7 @@ function RegisterForm({ showModal }) {
           name=""
           id=""
           value={privacy_poclicy_accepted}
-          onChange={(e) => setPrivacy_poclicy_accepted(E.target.value)}
+          onChange={(e) => setPrivacy_poclicy_accepted(e.target.value)}
           className="h-[14px] w-[14px] bg-inherit"
         />
         <h6 className="font-mons text-[10px] font-normal text-white sm:text-xs">
