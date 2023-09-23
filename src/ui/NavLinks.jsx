@@ -27,6 +27,8 @@ function NavLinks() {
           atContactPage && {
             background: "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
             backgroundClip: "text",
+            webkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
           }
         }
       >
