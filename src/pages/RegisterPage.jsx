@@ -7,14 +7,17 @@ import { createPortal } from "react-dom";
 import emoji from "../assets/walk.png";
 import dash from "../assets/dashUndelIne.svg";
 
+// STAR IMPORTS
 import lightPurleStar from "../assets/lightPurpleStar.svg";
 import greyStar from "../assets/greyStar.svg";
 import darkPurpleStar from "../assets/starDarkPurple.svg";
 import TwinkleStar from "../ui/TwinkleStar";
 import whiteStar from "../assets/whiteStar.svg";
 
+// FLARES
 import flare1 from "../assets/contactFlare.png";
 import flare2 from "../assets/contactFlare2.png";
+
 function RegisterPage() {
   const [showModal, setShowModal] = useState(false);
 

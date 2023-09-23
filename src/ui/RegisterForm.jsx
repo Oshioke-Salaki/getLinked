@@ -14,28 +14,46 @@ function RegisterForm({ showModal }) {
   const [privacy_poclicy_accepted, setPrivacy_poclicy_accepted] =
     useState(false);
   const [categories, setCategories] = useState([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isLoadingCategories, setIsLoadingCategories] = useState(false);
 
   useEffect(() => {
     async function getCategories() {
-      const res = await fetch(
-        `https://backend.getlinked.ai/hackathon/categories-list`,
-      );
-      const data = await res.json();
-      setCategories(data);
+      try {
+        setIsLoadingCategories(true);
+        const res = await fetch(
+          `https://backend.getlinked.ai/hackathon/categories-list`,
+        );
+        const data = await res.json();
+        setCategories(data);
+      } catch (err) {
+        console.log(err);
+      } finally {
+        setIsLoadingCategories(false);
+      }
     }
-
     getCategories();
   });
 
   function handleSubmit(data) {
     async function postData() {
-      fetch(`https://backend.getlinked.ai/hackathon/registration`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then((data) => console.log(data));
+      try {
+        setIsSubmitting(true);
+        const res = await fetch(
+          `https://backend.getlinked.ai/hackathon/registration`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          },
+        );
+        const resq = await res.json();
+        console.log(resq);
+      } catch (err) {
+        console.log(err);
+      } finally {
+        setIsSubmitting(false);
+      }
     }
 
     postData();
@@ -216,6 +234,7 @@ function RegisterForm({ showModal }) {
           background:
             "linear-gradient(270deg, rgb(144, 58, 255) 0%, rgb(212, 52, 254) 56.42%, rgb(255, 38, 185) 99.99%, rgb(254, 52, 185) 100%)",
         }}
+        disabled={isSubmitting || isLoadingCategories}
       >
         Register
       </button>
