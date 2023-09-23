@@ -2,8 +2,30 @@
 import emoji from "../assets/walk.png";
 import dash from "../assets/dashUndelIne.svg";
 import SecondaryButton from "./SecondaryButton";
+import { useEffect, useState } from "react";
 
 function RegisterForm({ showModal }) {
+  const [email, setEmail] = useState("");
+  const [phone_number, setPhone_number] = useState("");
+  const [team_name, setTeam_name] = useState("");
+  const [group_size, setGroup_size] = useState(1);
+  const [project_topic, setProject_topic] = useState("");
+  const [category, setCategory] = useState(1);
+  const [privacy_poclicy_accepted, setPrivacy_poclicy_accepted] =
+    useState(false);
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    async function getCategories() {
+      const res = await fetch(
+        `https://backend.getlinked.ai/hackathon/categories-list`,
+      );
+      const data = await res.json();
+      setCategories(data);
+    }
+
+    getCategories();
+  });
   return (
     <form
       action=""
@@ -34,18 +56,22 @@ function RegisterForm({ showModal }) {
             <input
               type="text"
               placeholder="Enter the name of your group"
+              value={team_name}
+              onChange={(e) => setTeam_name(e.target.value)}
               className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
             />
           </div>
           <div>
             <label
-              htmlFor="teamName"
+              htmlFor="phone"
               className="mb-[5px] text-[13px] font-normal sm:mb-[11px] sm:text-sm"
             >
               Phone
             </label>
             <input
               type="text"
+              value={phone_number}
+              onChange={(e) => setPhone_number(e.target.value)}
               placeholder="Enter your phone number"
               className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
             />
@@ -61,6 +87,8 @@ function RegisterForm({ showModal }) {
             </label>
             <input
               type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
               className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
             />
@@ -75,6 +103,8 @@ function RegisterForm({ showModal }) {
             <input
               type="text"
               placeholder="What is your group project topic"
+              value={project_topic}
+              onChange={(e) => setProject_topic(e.target.value)}
               className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
             />
           </div>
@@ -90,9 +120,21 @@ function RegisterForm({ showModal }) {
             <select
               name=""
               id="category"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
               className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
               placeholder="Select your category"
-            ></select>
+            >
+              {categories.map((i, index) => (
+                <option
+                  key={i.id}
+                  className="bg-bgMain text-white"
+                  value={index + 1}
+                >
+                  {i.name}
+                </option>
+              ))}
+            </select>
           </div>
           <div>
             <label
@@ -104,9 +146,24 @@ function RegisterForm({ showModal }) {
             <select
               name=""
               id="grpSize"
+              value={group_size}
+              onChange={(e) => setGroup_size(e.target.value)}
               className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
               placeholder="Select"
-            ></select>
+            >
+              <option value={1} className="bg-bgMain text-white">
+                1
+              </option>
+              <option value={2} className="bg-bgMain text-white">
+                2
+              </option>
+              <option value={3} className="bg-bgMain text-white">
+                3
+              </option>
+              <option value={4} className="bg-bgMain text-white">
+                4
+              </option>
+            </select>
           </div>
         </div>
       </div>
@@ -118,13 +175,28 @@ function RegisterForm({ showModal }) {
           type="checkbox"
           name=""
           id=""
+          value={privacy_poclicy_accepted}
+          onChange={(e) => setPrivacy_poclicy_accepted(E.target.value)}
           className="h-[14px] w-[14px] bg-inherit"
         />
         <h6 className="font-mons text-[10px] font-normal text-white sm:text-xs">
           I agreed with the event terms and conditions and privacy policy
         </h6>
       </div>
-      <SecondaryButton showModal={showModal}>Register Now</SecondaryButton>
+      <SecondaryButton
+        showModal={showModal}
+        data={{
+          email,
+          phone_number,
+          team_name,
+          group_size,
+          project_topic,
+          category,
+          privacy_poclicy_accepted,
+        }}
+      >
+        Register Now
+      </SecondaryButton>
     </form>
   );
 }

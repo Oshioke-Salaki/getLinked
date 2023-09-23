@@ -17,13 +17,13 @@ import flare1 from "../assets/contactFlare.png";
 import flare2 from "../assets/contactFlare2.png";
 function RegisterPage() {
   const [showModal, setShowModal] = useState(false);
+
   return (
     <div
       className={`relative h-full min-h-screen overflow-x-hidden bg-[#150E28] pb-[57px] ${
         showModal && "h-[100dvh] overflow-hidden pl-[8px]"
       }`}
     >
-      {/* {showModal && <Modal />} */}
       {showModal &&
         createPortal(<Modal setShowModal={setShowModal} />, document.body)}
       <div className="hidden sm:block">

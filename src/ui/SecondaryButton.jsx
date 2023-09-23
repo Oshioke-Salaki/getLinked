@@ -1,10 +1,22 @@
 /* eslint-disable react/prop-types */
 
-function SecondaryButton({ children, showModal }) {
+import { useState } from "react";
+
+function SecondaryButton({ children, showModal, data }) {
+  function handleSubmit(data) {
+    const data = fetch(`https://backend.getlinked.ai/hackathon/registration`, {
+      method: "POST",
+      headers: "Content-Type: application/json",
+      data: data,
+      // {email, phone_number, team_name, group_size, project_topic, category, privacy_poclicy_accepted}
+    });
+  }
+
   return (
     <button
       onClick={(e) => {
         e.preventDefault();
+        handleSubmit(data);
         showModal();
       }}
       className=" inline-block w-full rounded px-[46px] py-[15px] font-mons text-[13px] font-normal text-white sm:px-[52px] sm:py-[17px] sm:text-base"
