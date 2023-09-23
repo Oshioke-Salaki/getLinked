@@ -5,7 +5,8 @@ function ContactForm() {
   const [first_name, setFirst_name] = useState("");
   const [message, setMessage] = useState("");
 
-  async function handleSubmit() {
+  async function handleSubmit(e) {
+    e.preventDefault();
     const res = await fetch(
       `https://backend.getlinked.ai/hackathon/contact-form`,
       {
