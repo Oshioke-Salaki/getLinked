@@ -16,22 +16,21 @@ function NavLinks() {
     else setAtContactPage(false);
   }, [pathname]);
 
+  const style = atContactPage
+    ? {
+        background: "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
+        backgroundClip: "text",
+        webkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      }
+    : {};
+
   return (
     <ul className="body-font flex items-center gap-x-14 font-mons">
       <li className="text-base font-normal text-white">Timeline</li>
       <li className="text-base font-normal text-white">Overview</li>
       <li className="text-base font-normal text-white">FAQs</li>
-      <li
-        className={`text-base font-normal text-white`}
-        style={
-          atContactPage && {
-            background: "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
-            backgroundClip: "text",
-            webkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }
-        }
-      >
+      <li className={`text-base font-normal text-white`} style={style}>
         <NavLink to="contact">Contact</NavLink>
       </li>
     </ul>
