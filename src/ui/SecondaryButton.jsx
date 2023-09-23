@@ -1,19 +1,27 @@
 /* eslint-disable react/prop-types */
 
 function SecondaryButton({ children, showModal, data }) {
-  async function handleSubmit(data) {
-    const res = await fetch(
-      `https://backend.getlinked.ai/hackathon/registration`,
-      {
-        method: "POST",
-        headers: "Content-Type: application/json",
-        body: JSON.stringify(data),
-        // {email, phone_number, team_name, group_size, project_topic, category, privacy_poclicy_accepted}
-      },
-    );
-    const resq = await res.JSON();
+  function handleSubmit(data) {
+    async function postData() {
+      try {
+        const res = await fetch(
+          `https://backend.getlinked.ai/hackathon/registration`,
+          {
+            method: "POST",
+            headers: "Content-Type: application/json",
+            body: JSON.stringify(data),
+            // {email, phone_number, team_name, group_size, project_topic, category, privacy_poclicy_accepted}
+          },
+        );
+        const resq = await res.JSON();
 
-    return resq;
+        return resq;
+      } catch (err) {
+        console.log(err);
+      }
+    }
+
+    postData();
   }
 
   return (
