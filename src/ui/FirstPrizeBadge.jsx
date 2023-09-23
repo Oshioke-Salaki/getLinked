@@ -1,6 +1,6 @@
 function FirstPrizeBadge() {
   return (
-    <div className="h-fit overflow-hidden rounded-lg border-[1px] border-solid border-[#903AFF] bg-[#903aff1e] px-2 pb-4 pt-[55px] text-center font-mons sm:mt-[30px] sm:max-h-[374px] sm:px-[23px] sm:pb-[21px] sm:pt-[110px]">
+    <div className="h-fit overflow-hidden rounded-lg border-[1px] border-solid border-[#903AFF] bg-[#903aff1e] px-2 pb-4 pt-[60px] text-center font-mons sm:mt-[30px] sm:max-h-[374px] sm:px-[23px] sm:pb-[21px] sm:pt-[110px]">
       <h2 className="text-xs font-bold leading-[26px] text-white sm:mt-[30px] sm:text-[40px] sm:leading-[87px]">
         1st
       </h2>
