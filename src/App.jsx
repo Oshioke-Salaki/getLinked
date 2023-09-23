@@ -1,7 +1,7 @@
-import WebPage from "./pages/WebPage";
+import Router from "./routes";
 
 function App() {
-  return <WebPage />;
+  return <Router />;
 }
 
 export default App;
