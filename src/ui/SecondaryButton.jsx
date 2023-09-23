@@ -5,7 +5,7 @@ function SecondaryButton({ children, showModal }) {
     <button
       onClick={(e) => {
         e.preventDefault();
-        showModal(true);
+        showModal();
       }}
       className=" inline-block w-full rounded px-[46px] py-[15px] font-mons text-[13px] font-normal text-white sm:px-[52px] sm:py-[17px] sm:text-base"
       style={{

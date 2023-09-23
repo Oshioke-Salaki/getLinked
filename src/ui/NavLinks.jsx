@@ -31,7 +31,7 @@ function NavLinks() {
       <li className="text-base font-normal text-white">Overview</li>
       <li className="text-base font-normal text-white">FAQs</li>
       <li className={`text-base font-normal text-white`} style={style}>
-        <NavLink to="contact">Contact</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
     </ul>
   );

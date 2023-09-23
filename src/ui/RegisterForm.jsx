@@ -7,102 +7,120 @@ function RegisterForm({ showModal }) {
   return (
     <form
       action=""
-      className="shadow-contactFormShadow bg-bgLight h-fit w-[740px] rounded-xl px-[92px] py-[65px]"
+      className="sm:shadow-contactFormShadow sm:bg-bgLight z-30 h-fit w-full rounded-xl px-[92px] py-[23px] sm:w-[740px] sm:py-[65px]"
     >
-      <h1 className="mb-[46px] text-[32px] font-semibold text-primaryColor">
+      <h1 className="mb-[46px] hidden text-[32px] font-semibold text-primaryColor sm:block">
         Register
       </h1>
-      <h2 className="mb-[22px] flex items-baseline font-mons text-sm font-normal text-white">
+      <h2 className="mb-[22px] hidden items-baseline font-mons text-sm font-normal text-white sm:flex">
         Be part of this movment{" "}
         <span className=" ml-[7px] flex flex-col items-center text-primaryColor">
           <img src={emoji} className="h-[30px] w-[51px]" alt="" />
           <img src={dash} alt="" className="w-[101px]" />
         </span>
       </h2>
-      <h3 className="mb-[33px] font-mons text-2xl font-normal text-white">
+      <h3 className="mb-[23px] font-mons text-xl font-normal text-white sm:mb-[33px] sm:text-2xl">
         CREATE YOUR ACCOUNT
       </h3>
-      <div className="flex flex-col gap-y-[29px] text-white">
-        <div className="grid grid-cols-[1fr_1fr] gap-x-8 font-mons">
+      <div className="flex flex-col gap-y-[18px] text-white sm:gap-y-[29px]">
+        <div className="grid grid-cols-[1fr] gap-y-[18px] font-mons sm:grid-cols-[1fr_1fr] sm:gap-x-8">
           <div>
-            <label htmlFor="teamName" className="mb-[11px] text-sm font-normal">
+            <label
+              htmlFor="teamName"
+              className="mb-[5px] text-[13px] font-normal sm:mb-[11px] sm:text-sm"
+            >
               Team&apos;s Name
             </label>
             <input
               type="text"
               placeholder="Enter the name of your group"
-              className="shadow-contactFormShadow w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[15px]"
+              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
             />
           </div>
           <div>
-            <label htmlFor="phone" className="mb-[11px] text-sm font-normal">
+            <label
+              htmlFor="teamName"
+              className="mb-[5px] text-[13px] font-normal sm:mb-[11px] sm:text-sm"
+            >
               Phone
             </label>
             <input
               type="text"
               placeholder="Enter your phone number"
-              className="shadow-contactFormShadow w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[15px]"
+              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
             />
           </div>
         </div>
-        <div className="grid grid-cols-[1fr_1fr] gap-x-8">
+        <div className="grid grid-cols-[1fr] gap-y-[18px] font-mons sm:grid-cols-[1fr_1fr] sm:gap-x-8">
           <div>
-            <label htmlFor="email" className="mb-[11px] text-sm font-normal">
+            <label
+              htmlFor="email"
+              className="mb-[5px] text-[13px] font-normal sm:mb-[11px] sm:text-sm"
+            >
               Email
             </label>
             <input
               type="text"
               placeholder="Enter your email address"
-              className="shadow-contactFormShadow w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[15px]"
+              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
             />
           </div>
           <div>
-            <label htmlFor="project" className="mb-[11px] text-sm font-normal">
+            <label
+              htmlFor="project"
+              className="mb-[5px] text-[13px] font-normal sm:mb-[11px] sm:text-sm"
+            >
               Project Topic
             </label>
             <input
               type="text"
               placeholder="What is your group project topic"
-              className="shadow-contactFormShadow w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[15px]"
+              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
             />
           </div>
         </div>
-        <div className="grid grid-cols-[1fr_1fr] gap-x-8">
+        <div className="grid grid-cols-[2fr_1fr] gap-x-[19px]  font-mons sm:grid-cols-[1fr_1fr] sm:gap-x-8">
           <div>
-            <label htmlFor="category" className="mb-[11px] text-sm font-normal">
+            <label
+              htmlFor="category"
+              className="mb-[5px] text-[13px] font-normal sm:mb-[11px] sm:text-sm"
+            >
               Category
             </label>
             <select
               name=""
               id="category"
-              className="shadow-contactFormShadow w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[15px]"
+              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
               placeholder="Select your category"
             ></select>
           </div>
           <div>
-            <label htmlFor="grpSize" className="mb-[11px] text-sm font-normal">
+            <label
+              htmlFor="grpSize"
+              className="mb-[5px] text-[13px] font-normal sm:mb-[11px] sm:text-sm"
+            >
               Group size
             </label>
             <select
               name=""
               id="grpSize"
-              className="shadow-contactFormShadow w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[15px]"
+              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
               placeholder="Select"
             ></select>
           </div>
         </div>
       </div>
-      <h5 className="mb-4 mt-[23px] font-mons text-xs font-normal italic text-[#FF26B9]">
+      <h5 className="mb-[12px] mt-[15px] font-mons text-[9px] font-normal italic text-[#FF26B9] sm:mb-4 sm:mt-[23px] sm:text-xs">
         Please review your registration details before submitting
       </h5>
-      <div className="mb-[22px] flex gap-x-[10px]">
+      <div className="mb-[14px] flex gap-x-[10px] sm:mb-[22px]">
         <input
           type="checkbox"
           name=""
           id=""
           className="h-[14px] w-[14px] bg-inherit"
         />
-        <h6 className="font-mons text-xs font-normal text-white">
+        <h6 className="font-mons text-[10px] font-normal text-white sm:text-xs">
           I agreed with the event terms and conditions and privacy policy
         </h6>
       </div>

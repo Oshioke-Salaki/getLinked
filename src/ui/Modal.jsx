@@ -3,9 +3,9 @@ import SecondaryButton from "./SecondaryButton";
 
 function Modal() {
   return (
-    <div className="bg-overlayColor absolute inset-0 z-30 flex h-full justify-center pt-[159px] font-mons text-white">
-      <div className="flex h-[664px] w-[699px] flex-col items-center pb-[73px] pl-[54px] pr-[71px] pt-[34px] text-center">
-        <img src={congrats} alt="" />
+    <div className="bg-overlayColor absolute inset-0 z-30 flex justify-center pb-24 pt-[40px] font-mons text-white">
+      <div className="flex h-fit w-[699px] flex-col items-center border-[1px] border-solid border-primaryColor pb-[68px] pl-[54px] pr-[71px] pt-[30px] text-center">
+        <img src={congrats} alt="" className="h-[321px] w-[427px]" />
         <h1 className="mb-[15px] text-[32px] font-semibold">
           Congratulations
           <br />
