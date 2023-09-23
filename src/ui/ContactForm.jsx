@@ -21,7 +21,7 @@ function ContactForm() {
         // {email, phone_number, team_name, group_size, project_topic, category, privacy_poclicy_accepted}
       },
     );
-    const resq = await res.JSON();
+    const resq = await res.json();
 
     console.log(resq);
   }
