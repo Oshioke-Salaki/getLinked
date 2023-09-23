@@ -43,7 +43,7 @@ function RegisterForm({ showModal }) {
   return (
     <form
       action=""
-      className="sm:shadow-contactFormShadow sm:bg-bgLight z-30 h-fit w-full rounded-xl px-[92px] py-[23px] sm:w-[740px] sm:py-[65px]"
+      className="sm:shadow-contactFormShadow sm:bg-bgLight z-30 h-fit w-full rounded-xl px-[63px] py-[23px] sm:w-[740px] sm:px-[92px] sm:py-[65px]"
     >
       <h1 className="mb-[46px] hidden text-[32px] font-semibold text-primaryColor sm:block">
         Register
