@@ -139,7 +139,7 @@ function RegisterForm({ showModal }) {
           <div>
             <label
               htmlFor="grpSize"
-              className="mb-[5px] text-[13px] font-normal sm:mb-[11px] sm:text-sm"
+              className="mb-[5px] text-[11px] font-normal sm:mb-[11px] sm:text-sm"
             >
               Group size
             </label>

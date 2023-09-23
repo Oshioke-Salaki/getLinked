@@ -21,7 +21,7 @@ function RegisterPage() {
   return (
     <div
       className={`relative h-full min-h-screen overflow-x-hidden bg-[#150E28] pb-[57px] ${
-        showModal && "h-[100dvh] overflow-hidden pl-[8px]"
+        showModal && "h-[100dvh] w-full overflow-hidden pl-[8px]"
       }`}
     >
       {showModal &&
