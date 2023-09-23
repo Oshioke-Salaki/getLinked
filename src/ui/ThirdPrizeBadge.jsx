@@ -4,7 +4,7 @@ function ThirdPrizeBadge() {
       <h2 className="text-xs font-bold leading-[26px] text-white sm:text-[36px] sm:leading-[78px]">
         3rd
       </h2>
-      <h6 className="mt-[-20px] text-xs font-semibold leading-[26px] text-white sm:mb-0 sm:text-2xl sm:leading-[52px]">
+      <h6 className="text-xs font-semibold leading-[26px] text-white sm:mb-0 sm:mt-[-20px] sm:text-2xl sm:leading-[52px]">
         Runner
       </h6>
       <h1 className="text-sm font-bold leading-[30px] text-[#903AFF] sm:mt-[-10px] sm:text-[32px] sm:leading-[69px]">
