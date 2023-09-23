@@ -1,11 +1,29 @@
 import { useState } from "react";
-import PrimaryBtn from "./PrimaryBtn";
 
 function ContactForm() {
   const [email, setEmail] = useState("");
-  const [phone_number, setPhone_number] = useState("");
   const [first_name, setFirst_name] = useState("");
   const [message, setMessage] = useState("");
+
+  async function handleSubmit() {
+    const res = await fetch(
+      `https://backend.getlinked.ai/hackathon/contact-form`,
+      {
+        method: "POST",
+        headers: "Content-Type: application/json",
+        body: JSON.stringify({
+          email,
+          phone_number: "09051896629",
+          first_name,
+          message,
+        }),
+        // {email, phone_number, team_name, group_size, project_topic, category, privacy_poclicy_accepted}
+      },
+    );
+    const resq = await res.JSON();
+
+    return resq;
+  }
 
   return (
     <form
@@ -41,7 +59,16 @@ function ContactForm() {
         className="mb-[31px] h-[160px] w-full rounded border-[1px] border-solid border-white bg-transparent px-[15px] py-[6px] font-mons text-base font-normal text-white placeholder:text-white sm:h-[119px]"
       ></textarea>
       <div className="flex w-full justify-center">
-        <PrimaryBtn>Submit</PrimaryBtn>
+        <button
+          onClick={handleSubmit}
+          className=" inline-block rounded px-[46px] py-[15px] font-mons text-[13px] font-normal text-white sm:px-[52px] sm:py-[17px] sm:text-base"
+          style={{
+            background:
+              "linear-gradient(270deg, rgb(144, 58, 255) 0%, rgb(212, 52, 254) 56.42%, rgb(255, 38, 185) 99.99%, rgb(254, 52, 185) 100%)",
+          }}
+        >
+          Submit
+        </button>
       </div>
     </form>
   );

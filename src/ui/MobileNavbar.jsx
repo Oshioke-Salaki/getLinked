@@ -58,7 +58,7 @@ const MobileNavbar = ({ setToggle }) => {
           </li>
           <li className="">
             <Link
-              href={"/contact"}
+              to={"/contact"}
               onClick={toggleNav}
               className={`text-xl ${
                 currentRoute === "/contact" ? "active" : ""
