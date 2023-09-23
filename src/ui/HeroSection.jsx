@@ -11,8 +11,8 @@ import TwinkleStar from "./TwinkleStar";
 import Emojis from "./Emojis";
 function HeroSection() {
   return (
-    <div className="relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] border-b-borderColor px-[0px] pt-8 sm:h-[813px] sm:pl-[130px] sm:pr-[55px]">
-      <h4 className="relative w-full text-center font-mons text-base font-bold text-white sm:text-right sm:text-[36px]">
+    <div className="relative flex h-fit flex-col items-center overflow-x-hidden overflow-y-hidden border-b-[1px] border-b-borderColor px-[0px] pt-8 sm:h-[813px] sm:items-start sm:pl-[130px] sm:pr-[55px]">
+      <h4 className="relative w-fit text-center font-mons text-base font-bold text-white sm:w-full sm:text-right sm:text-[36px]">
         Igniting a Revolution in HR Innovation{" "}
         <svg
           className="absolute right-[10px] top-[120%] m-0 h-[11px] w-[115px] sm:h-[17px] sm:w-[255px]"
@@ -35,11 +35,6 @@ function HeroSection() {
           />
           <img src={heroImg} alt="" className="grayscale" />
         </div>
-        {/* <img
-          src={bulb}
-          alt=""
-          className="absolute left-[267px] top-[28px] h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
-        /> */}
         <h1 className="relative mt-10 pt-[26px] text-center text-[32px] font-bold text-white  sm:mt-[100px] sm:pt-[80px] sm:text-left sm:text-[80px]">
           <img
             src={bulb}
