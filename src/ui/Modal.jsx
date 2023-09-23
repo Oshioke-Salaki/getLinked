@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import congrats from "../assets/congratulation.png";
+import wink from "../assets/wink.png";
 
 function Modal({ setShowModal }) {
   return (
@@ -18,7 +19,14 @@ function Modal({ setShowModal }) {
         <p className="mb-[29px] text-[12px] font-medium sm:mb-[38px] sm:text-sm sm:font-semibold">
           Yes, it was easy and you did it!
           <br />
-          check your mail box for next step
+          check your mail box for next step{" "}
+          <span className="inline-block">
+            <img
+              src={wink}
+              className="inline-block h-[14px] w-[14px] sm:h-[20px] sm:w-[20px]"
+              alt=""
+            />
+          </span>
         </p>
         <button
           onClick={(e) => {
