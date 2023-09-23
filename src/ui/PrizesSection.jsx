@@ -12,7 +12,7 @@ import flareRight from "../assets/flareRight.png";
 
 function PrizesSection() {
   return (
-    <div className="relative z-20 flex flex-col justify-normal border-b-2 border-b-white pb-[89px] pl-0 pr-0 pt-[72px] sm:flex-row sm:justify-center sm:gap-x-[37px] sm:pb-[149px] sm:pl-[106px] sm:pr-[129px] sm:pt-[74px]">
+    <div className="relative z-20 flex flex-col justify-normal pb-[89px] pl-0 pr-0 pt-[72px] sm:flex-row sm:justify-center sm:gap-x-[37px] sm:pb-[149px] sm:pl-[106px] sm:pr-[129px] sm:pt-[74px]">
       <img
         src={flare1}
         alt=""

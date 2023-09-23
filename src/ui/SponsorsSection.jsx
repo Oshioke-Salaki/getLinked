@@ -53,7 +53,7 @@ function SponsorsSection() {
           <img src={sponsor6}></img>
         </div>
       </div>
-      <img src={sponsors} alt="" className="block h-[467px] w-full sm:hidden" />
+      <img src={sponsors} alt="" className="block w-full sm:hidden" />
 
       {/* Stars */}
       <TwinkleStar
