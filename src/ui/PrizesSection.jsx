@@ -12,7 +12,7 @@ import flareRight from "../assets/flareRight.png";
 
 function PrizesSection() {
   return (
-    <div className="relative flex flex-col justify-normal pb-[89px] pl-0 pr-0 pt-[72px] sm:flex-row sm:justify-center sm:gap-x-[37px] sm:pb-[149px] sm:pl-[106px] sm:pr-[129px] sm:pt-[74px]">
+    <div className="relative z-20 flex flex-col justify-normal border-b-2 border-b-white pb-[89px] pl-0 pr-0 pt-[72px] sm:flex-row sm:justify-center sm:gap-x-[37px] sm:pb-[149px] sm:pl-[106px] sm:pr-[129px] sm:pt-[74px]">
       <img
         src={flare1}
         alt=""
@@ -34,7 +34,7 @@ function PrizesSection() {
             Prizes and
             <br /> <span className="text-primaryColor">Rewards</span>
           </h1>
-          <p className="font-mons mt-[3px] text-xs font-normal leading-5 text-white sm:mt-4 sm:text-sm sm:leading-7">
+          <p className="mt-[3px] font-mons text-xs font-normal leading-5 text-white sm:mt-4 sm:text-sm sm:leading-7">
             Highlight of the prizes or rewards for winners and
             <br /> for participants
           </p>

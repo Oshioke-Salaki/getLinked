@@ -19,7 +19,7 @@ import judgeFlare from "../assets/judgeFlare.png";
 
 function WebPage() {
   return (
-    <div className="bg-bgMain relative h-fit overflow-x-hidden">
+    <div className="relative h-fit overflow-x-hidden bg-bgMain">
       <div
         className="absolute left-[-180px] top-0 hidden h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:flex sm:h-auto sm:w-auto"
         style={{
@@ -40,7 +40,7 @@ function WebPage() {
       <img
         src={ruleFlare}
         alt=""
-        className="absolute top-[1449px] bg-blend-hard-light sm:top-[1319px]"
+        className="absolute top-[5491px] bg-blend-hard-light sm:top-[1319px]"
       />
       <img
         src={ruleFlareRight}
