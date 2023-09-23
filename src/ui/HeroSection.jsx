@@ -11,11 +11,11 @@ import TwinkleStar from "./TwinkleStar";
 import Emojis from "./Emojis";
 function HeroSection() {
   return (
-    <div className="relative flex h-fit flex-col items-center overflow-x-hidden overflow-y-hidden border-b-[1px] border-b-borderColor px-[0px] pt-8 sm:h-[813px] sm:items-start sm:pl-[130px] sm:pr-[55px]">
+    <div className="relative h-fit overflow-x-hidden overflow-y-hidden border-b-[1px] border-b-borderColor px-[0px] pt-8 sm:h-[813px] sm:pl-[130px] sm:pr-[55px]">
       <h4 className="relative w-fit text-center font-mons text-base font-bold text-white sm:w-full sm:text-right sm:text-[36px]">
         Igniting a Revolution in HR Innovation{" "}
         <svg
-          className="absolute right-[10px] top-[120%] m-0 h-[11px] w-[115px] sm:h-[17px] sm:w-[255px]"
+          className="absolute top-[120%] m-0 h-[11px] w-[115px] sm:right-[10px] sm:h-[17px] sm:w-[255px]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 255 17"
           fill="none"
@@ -39,7 +39,7 @@ function HeroSection() {
           <img
             src={bulb}
             alt=""
-            className="absolute left-[267px] top-[28px] h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
+            className="absolute  left-[222px] top-[28px] h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
           />
           getlinked Tech
         </h1>
