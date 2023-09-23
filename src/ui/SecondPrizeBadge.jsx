@@ -7,7 +7,7 @@ function SecondPrizeBadge() {
       <h6 className="mt-[-20px] text-xs font-semibold leading-[26px] text-white sm:mb-0 sm:text-2xl sm:leading-[52px]">
         Runner
       </h6>
-      <h1 className="text-sm font-bold leading-[30px] text-[#903AFF] sm:text-[32px] sm:leading-[69px]">
+      <h1 className="text-sm font-bold leading-[30px] text-[#903AFF] sm:mt-[-10px] sm:text-[32px] sm:leading-[69px]">
         N300,000
       </h1>
     </div>
