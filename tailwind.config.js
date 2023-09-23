@@ -18,6 +18,11 @@ export default {
         buttonBg:
           "linear-gradient(270deg, rgb(144, 58, 255) 0%, rgb(212, 52, 254) 56.42%, rgb(255, 38, 185) 99.99%, rgb(254, 52, 185) 100%)",
         overlayColor: "rgba(21, 14, 40, 0.93)",
+        schemeBgcolor: "#150E28",
+        schemePurple: "#903AFF",
+        schemeViolet: "#D434FE",
+        schemePink: "#EC2AD3",
+        schemedark: "#100B1F",
       },
 
       backgroundImage: {

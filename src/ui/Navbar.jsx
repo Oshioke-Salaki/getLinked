@@ -6,6 +6,7 @@ import PrimaryBtn from "./PrimaryBtn";
 import hamburger from "../assets/hamburgerIcon.svg";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import MobileNavbar from "./MobileNavbar";
 
 function Navbar({ hasBorder }) {
   // const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
@@ -28,11 +29,13 @@ function Navbar({ hasBorder }) {
     else setAtRegPage(false);
   }, [pathname]);
 
+  const [toggleNav, setToggleNav] = useState(false);
+
   return (
     <nav
       className={`${
         hasBorder && "border-b-[1px] border-b-borderColor"
-      }  flex items-center justify-between  px-[48px] pb-[21px] pt-[36px] sm:px-[128px] sm:pb-[25px] sm:pt-[63px]`}
+      }  relative flex items-center  justify-between px-[48px] pb-[21px] pt-[36px] sm:px-[128px] sm:pb-[25px] sm:pt-[63px]`}
     >
       <Logo />
       <div className="hidden gap-[121px] sm:flex sm:justify-end">
@@ -41,9 +44,17 @@ function Navbar({ hasBorder }) {
           Register
         </PrimaryBtn>
       </div>
-      <button className="cursor-pointer sm:hidden">
+      <button
+        className="cursor-pointer sm:hidden"
+        onClick={() => {
+          setToggleNav(true);
+        }}
+      >
         <img src={hamburger} alt="" className="flex h-[14px] w-[19px] " />
       </button>
+      {toggleNav && (
+        <MobileNavbar setToggle={setToggleNav} toggle={toggleNav} />
+      )}
     </nav>
   );
 }
