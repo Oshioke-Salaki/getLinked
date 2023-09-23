@@ -7,11 +7,11 @@ import linkedIn from "../assets/linkedin.svg";
 
 function ContactPage() {
   return (
-    <div className="sm:h-screen sm:w-screen">
+    <div className="overflow-x-hidden bg-[#150E28]">
       <Navbar />
-      <main className="gap-x-[225px flex h-full items-center justify-center pl-[188px] pr-[208px]">
-        <div className="text-white">
-          <h1 className="text-[32px] font-semibold text-[#d434fe] sm:text-[17px]">
+      <main className="flex h-full justify-center gap-x-[225px] pb-[115px] pl-[188px] pr-[208px] pt-[115px]">
+        <div className="mt-[56px] text-white">
+          <h1 className="text-[17px] font-semibold text-[#d434fe] sm:text-[32px]">
             Get in touch
           </h1>
           <h3 className="my-[17px] font-mons text-base font-normal">
