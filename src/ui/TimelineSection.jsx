@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { timelineInfo } from "../data/TimelineInfo";
 import line from "../assets/line.svg";
 import TwinkleStar from "./TwinkleStar";
@@ -7,64 +6,24 @@ import greyStar from "../assets/greyStar.svg";
 import darkPurpleStar from "../assets/starDarkPurple.svg";
 
 const TimelineSection = () => {
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 0.2,
-        staggerChildren: 0.4,
-        duration: 0.4,
-      },
-    },
-  };
-
-  const itemdisplay = {
-    hidden: { opacity: 0, y: 60 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      duration: 0.9,
-    },
-  };
-
   return (
     <section id="timeline" className="relative w-full pb-[109px] pt-[72px]">
       <div className="overflow-hidden">
         <div className="flex w-full flex-col items-center px-[49px] sm:px-0">
           <div className="flex flex-col gap-y-[21px] sm:gap-y-4">
-            <motion.h2
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
-              className="w-full text-center text-xl font-bold leading-[26px] text-white sm:text-3xl sm:leading-9"
-            >
+            <h2 className="w-full text-center text-xl font-bold leading-[26px] text-white sm:text-3xl sm:leading-9">
               Timeline
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ type: "spring", duration: 2 }}
-              viewport={{ once: true }}
-              className="text-center text-sm font-normal text-white"
-            >
+            </h2>
+            <p className="text-center text-sm font-normal text-white">
               Here is the breakdown of the time we anticipate{" "}
               <br className="hidden sm:inline-block" /> using for the upcoming
               event.
-            </motion.p>
+            </p>
           </div>
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="mt-[56px] flex w-full flex-col items-center justify-center gap-[27px] sm:mt-[91px] sm:gap-[40px]"
-          >
+          <div className="mt-[56px] flex w-full flex-col items-center justify-center gap-[27px] sm:mt-[91px] sm:gap-[40px]">
             {/* DESKTOP VARIANT*/}
             {timelineInfo.map((item, i) => (
-              <motion.div
-                variants={itemdisplay}
+              <div
                 key={i}
                 className={` hidden w-full items-end justify-center gap-20 text-white sm:flex ${
                   item.reverse === false ? "flex-row-reverse" : "flex-row"
@@ -78,14 +37,14 @@ const TimelineSection = () => {
                   }`}
                 >
                   <h2
-                    className={`text-primaryColor font-mons max-w-[450px] text-lg font-bold lg:text-2xl ${
+                    className={`max-w-[450px] font-mons text-lg font-bold text-primaryColor lg:text-2xl ${
                       item.reverse === false ? "text-left" : "text-right"
                     }`}
                   >
                     {item.topic}
                   </h2>
                   <p
-                    className={`font-mons max-w-[400px] text-sm font-normal text-white ${
+                    className={`max-w-[400px] font-mons text-sm font-normal text-white ${
                       item.reverse === false ? "text-left" : "text-right"
                     }`}
                   >
@@ -98,12 +57,12 @@ const TimelineSection = () => {
                     alt="-"
                     className="tab:h-[137px] h-[77px] object-contain"
                   />
-                  <span className="bg-btnGradient font-mons flex h-14 w-14 items-center justify-center rounded-full text-2xl font-bold text-white">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-full bg-btnGradient font-mons text-2xl font-bold text-white">
                     {i + 1}
                   </span>
                 </div>
                 <p
-                  className={`text-primaryColor flex w-full text-lg font-bold lg:text-2xl ${
+                  className={`flex w-full text-lg font-bold text-primaryColor lg:text-2xl ${
                     item.reverse === false
                       ? "items-end justify-end text-left"
                       : "items-start justify-start text-right "
@@ -111,18 +70,17 @@ const TimelineSection = () => {
                 >
                   {item.date}
                 </p>
-              </motion.div>
+              </div>
             ))}
             {/* MOBILE vARIANT*/}
             {timelineInfo.map((item, i) => (
-              <motion.div
-                variants={itemdisplay}
+              <div
                 key={i}
                 className="flex w-full items-start justify-start gap-4 text-white sm:hidden"
               >
                 <div className="flex h-full flex-col items-center gap-1">
                   <img src={line} alt="-" className="h-[77px]" />
-                  <span className="bg-btnGradient flex h-5 w-5 items-center justify-center rounded-full text-sm font-bold text-white md:text-lg">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-btnGradient text-sm font-bold text-white md:text-lg">
                     {i + 1}
                   </span>
                 </div>
@@ -137,9 +95,9 @@ const TimelineSection = () => {
                     {item.date}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
 
