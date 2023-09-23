@@ -22,7 +22,7 @@ const MobileNavbar = ({ setToggle }) => {
 
   return (
     <div
-      className={`absolute left-0 top-0 z-[80] flex h-screen w-[100%] list-none flex-col items-center justify-center  bg-[##150E28] text-center text-white md:hidden lg:hidden`}
+      className={`absolute left-0 top-0 z-[80] flex h-screen w-[100%] list-none flex-col items-center justify-center  bg-[##150E28] text-center text-white backdrop-blur-[30px] md:hidden lg:hidden`}
     >
       <div
         className="absolute right-[51px] top-[39px] h-fit w-fit"
