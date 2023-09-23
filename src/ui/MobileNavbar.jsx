@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
-// import React, { useEffect } from "react";
-// import Link from "next/link";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
+import close from "../assets/closeBtn.svg";
 
 const MobileNavbar = ({ setToggle }) => {
   const location = useLocation();
@@ -23,8 +22,13 @@ const MobileNavbar = ({ setToggle }) => {
 
   return (
     <div
-      className={`absolute left-0 top-0 z-30 flex h-screen w-[100%] list-none flex-col items-center justify-center text-center  text-white backdrop-blur-sm md:hidden lg:hidden`}
+      className={`absolute left-0 top-0 z-30 flex h-screen w-[100%] list-none flex-col items-center justify-center bg-[##150E28]  text-center text-white backdrop-blur-[30px] md:hidden lg:hidden`}
     >
+      <img
+        src={close}
+        alt=""
+        className="absolute right-[51px] top-[39px] h-[23px] w-[23px]"
+      />
       <motion.div
         variants={parentAnimationVariants}
         initial="init"
