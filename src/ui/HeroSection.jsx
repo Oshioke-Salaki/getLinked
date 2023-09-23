@@ -15,7 +15,7 @@ function HeroSection() {
       <h4 className="relative w-fit self-center text-center font-mons text-base font-bold text-white sm:w-full sm:text-right sm:text-[36px]">
         Igniting a Revolution in HR Innovation{" "}
         <svg
-          className="absolute right-[8px] top-[120%] m-0 h-[11px] w-[115px] sm:right-[10px] sm:h-[17px] sm:w-[255px]"
+          className="absolute right-[8px] top-[110%] m-0 h-[11px] w-[115px] sm:right-[10px] sm:top-[120%] sm:h-[17px] sm:w-[255px]"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 255 17"
           fill="none"
