@@ -28,7 +28,7 @@ function PrizesSection() {
         alt=""
         className="z-10 mt-[179px] hidden h-[482px] w-[548px] sm:flex"
       />
-      <div className="flex flex-col items-center">
+      <div className="z-20 flex flex-col items-center">
         <div className="mb-10 pl-0 text-center sm:mb-[83px] sm:pl-[149px] sm:text-left">
           <h1 className=" text-xl font-bold text-white sm:text-[32px]">
             Prizes and
