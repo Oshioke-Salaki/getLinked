@@ -13,7 +13,7 @@ import Emojis from "./Emojis";
 function HeroSection() {
   return (
     <div className="relative flex h-fit flex-col overflow-x-hidden overflow-y-hidden border-b-[1px] border-b-borderColor px-[0px] pt-8 sm:h-[813px] sm:pl-[130px] sm:pr-[55px]">
-      <h4 className="relative w-fit self-center text-center font-mons text-base font-bold text-white sm:w-full sm:text-right sm:text-[36px]">
+      <h4 className="relative z-40 w-fit self-center text-center font-mons text-base font-bold text-white sm:w-full sm:text-right sm:text-[36px]">
         Igniting a Revolution in HR Innovation{" "}
         <svg
           className="absolute right-[8px] top-[110%] m-0 h-[11px] w-[115px] sm:right-[10px] sm:top-[120%] sm:h-[17px] sm:w-[255px]"
