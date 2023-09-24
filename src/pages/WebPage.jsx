@@ -92,11 +92,11 @@ function WebPage() {
       <img
         src={prizesFlareMini1}
         alt=""
-        className="absolute left-[-5px] top-[5600px] flex sm:hidden"
+        className="absolute left-[-5px] top-[5800px] flex sm:hidden"
       />
       <img
         src={prizesFlareMini2}
-        className="absolute right-[-14px] top-[6080px] flex sm:hidden"
+        className="absolute right-[-14px] top-[6180px] flex sm:hidden"
         alt=""
       />
 

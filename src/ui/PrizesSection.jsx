@@ -36,7 +36,7 @@ function PrizesSection() {
           alt=""
           className="mb-[51px] flex h-[282px] w-[321px] sm:hidden"
         />
-        <div className="relative flex w-fit flex-col items-center">
+        <div className="relative z-50 flex w-fit flex-col items-center">
           <img
             src={medals}
             className="absolute left-[7px] h-[126px] w-[280px] sm:left-4 sm:h-[296px] sm:w-[660px]"
