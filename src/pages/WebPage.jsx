@@ -92,23 +92,23 @@ function WebPage() {
       <img
         src={prizesFlareMini1}
         alt=""
-        className="absolute left-[-5px] top-[5491px] flex sm:hidden"
+        className="absolute left-[-5px] top-[5600px] flex sm:hidden"
       />
       <img
         src={prizesFlareMini2}
-        className="absolute right-[-14px] top-[5935px] flex sm:hidden"
+        className="absolute right-[-14px] top-[6080px] flex sm:hidden"
         alt=""
       />
 
       {/* SPONSORS MINI FLARES */}
       <img
         src={sponsorMiniFlare1}
-        className="absolute left-[-13px] top-[6244px] flex sm:hidden"
+        className="absolute left-[-13px] top-[6400px] flex sm:hidden"
         alt=""
       />
       <img
         src={sponsorMiniFlare2}
-        className="absolute right-[-6px] top-[6577px] flex sm:hidden"
+        className="absolute right-[-6px] top-[6777px] flex sm:hidden"
         alt=""
       />
       <Navbar hasBorder={true} />
