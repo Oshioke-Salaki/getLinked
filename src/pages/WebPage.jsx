@@ -17,6 +17,7 @@ import ruleFlareRight from "../assets/ruleFlareRight.png";
 import judgeFlare from "../assets/judgeFlare.png";
 import miniRuleFlareLeft from "../assets/ruleFlareMinLeft.png";
 import miniRuleFlareRight from "../assets/ruleMiniFlareRight.png";
+import flareJudgeMiniLeft from "../assets/flareJudgeMiniLeft.png";
 
 import heroFlareMini from "../assets/heroFlareMini.png";
 
@@ -64,11 +65,18 @@ function WebPage() {
         alt=""
         className="absolute right-[-21px] top-[1610px] hidden bg-blend-hard-light sm:flex"
       />
+      {/* ////////////////////// */}
 
+      {/* Judge */}
+      <img
+        src={flareJudgeMiniLeft}
+        className="left-[-14px] top-[2378px] flex sm:hidden"
+        alt=""
+      />
       <img
         src={judgeFlare}
         alt=""
-        className="absolute right-[-100px] top-[2642px] bg-blend-hard-light"
+        className="absolute right-[-100px] top-[2642px] hidden bg-blend-hard-light sm:flex"
       />
       <Navbar hasBorder={true} />
       <HeroSection />
