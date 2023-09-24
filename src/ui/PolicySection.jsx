@@ -8,6 +8,7 @@ import darkPurple from "../assets/starDarkPurple.svg";
 import purpleStar from "../assets/lightPurpleStar.svg";
 import whiteMini from "../assets/whiteStarMini.png";
 import lightPurpleMini from "../assets/lightPurpleStarMini.png";
+import flare from "../assets/privacyMiniFlare.png";
 function PolicySection() {
   return (
     <div className="relative flex  flex-col items-center justify-normal gap-y-[48px] pb-[167px] pl-[50px] pr-[50px] pt-[71px] text-center sm:flex-row sm:items-start  sm:justify-center sm:gap-x-[50px] sm:pl-[170px] sm:pr-[123px] sm:pt-[93px] sm:text-left">
@@ -90,6 +91,12 @@ function PolicySection() {
       <TwinkleStar
         className="left-[991px] top-[697px] hidden sm:flex"
         star={lightPurpleMini}
+      />
+
+      <img
+        src={flare}
+        className="absolute left-[-12px] top-[528px] flex sm:hidden"
+        alt=""
       />
     </div>
   );
