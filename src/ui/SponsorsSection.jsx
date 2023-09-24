@@ -20,12 +20,12 @@ function SponsorsSection() {
       <img
         src={flareLeft}
         alt=""
-        className="absolute left-[-231px] top-[-149px] bg-blend-hard-light"
+        className="absolute left-[-231px] top-[-149px] hidden bg-blend-hard-light sm:flex"
       />
       <img
         src={flareRight}
         alt=""
-        className="absolute right-[-90px] top-[360px] bg-blend-hard-light"
+        className="absolute right-[-90px] top-[360px] hidden bg-blend-hard-light sm:flex"
       />
       <h1 className="mb-[5px] text-xl font-bold leading-7 text-white sm:mb-[22px] sm:text-[32px] sm:leading-[86px]">
         Partners and Sponsors

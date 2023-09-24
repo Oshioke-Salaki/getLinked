@@ -23,7 +23,8 @@ import prizesFlareMini1 from "../assets/prizesFlareMini1.png";
 import prizesFlareMini2 from "../assets/prizesFlareMini2.png";
 
 import heroFlareMini from "../assets/heroFlareMini.png";
-
+import sponsorMiniFlare1 from "../assets/sponsorMiniFlare1.png";
+import sponsorMiniFlare2 from "../assets/sponsorMiniFlare2.png";
 function WebPage() {
   return (
     <div className="relative h-fit overflow-x-hidden bg-bgMain">
@@ -96,6 +97,18 @@ function WebPage() {
       <img
         src={prizesFlareMini2}
         className="absolute right-[-14px] top-[5935px] flex sm:hidden"
+        alt=""
+      />
+
+      {/* SPONSORS MINI FLARES */}
+      <img
+        src={sponsorMiniFlare1}
+        className="left-[-13px] top-[6244px] flex sm:hidden"
+        alt=""
+      />
+      <img
+        src={sponsorMiniFlare2}
+        className="right-[-6px] top-[6577px] flex sm:hidden"
         alt=""
       />
       <Navbar hasBorder={true} />
