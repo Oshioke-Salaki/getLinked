@@ -15,6 +15,7 @@ import heroVoid from "../assets/heroVoid.png";
 import ruleFlare from "../assets/ruleFlareLeft.png";
 import ruleFlareRight from "../assets/ruleFlareRight.png";
 import judgeFlare from "../assets/judgeFlare.png";
+import miniRuleFlareLeft from "../assets/ruleFlareMinLeft.png";
 
 import heroFlareMini from "../assets/heroFlareMini.png";
 
@@ -34,10 +35,18 @@ function WebPage() {
         src={flare2}
         className="absolute right-0 top-0 z-10 hidden bg-blend-hard-light sm:flex"
       />
+
       <img
         src={heroVoid}
         alt=""
         className="absolute right-[64px] top-[257px] z-50  hidden animate-pulse duration-300 sm:flex"
+      />
+
+      {/* rules flares */}
+      <img
+        src={miniRuleFlareLeft}
+        className="absolute left-0 top-[1449px] flex sm:hidden"
+        alt=""
       />
       <img
         src={ruleFlare}
@@ -47,8 +56,9 @@ function WebPage() {
       <img
         src={ruleFlareRight}
         alt=""
-        className="absolute right-[-21px] top-[1610px] bg-blend-hard-light"
+        className="absolute right-[-21px] top-[1610px] hidden bg-blend-hard-light sm:flex"
       />
+
       <img
         src={judgeFlare}
         alt=""
