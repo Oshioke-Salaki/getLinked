@@ -36,16 +36,16 @@ function HeroSection() {
           />
           <img src={heroImg} alt="" className="grayscale" />
         </div>
-        <h1 className="relative mt-10 pt-[26px] text-center text-[32px] font-bold text-white  sm:mt-[30px] sm:pt-[80px] sm:text-left sm:text-[80px]">
+        <h1 className="relative z-30 mt-10 pt-[26px] text-center text-[32px] font-bold  text-white sm:mt-[30px] sm:pt-[80px] sm:text-left sm:text-[80px] ">
           <img
             src={bulb}
             alt=""
-            className="absolute  left-[205px] top-[15px] h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
+            className="absolute left-[205px] top-[15px] z-30 h-[26px] w-[18px] items-end sm:left-[516px] sm:top-[45px] sm:h-[73px] sm:w-[53px]"
           />
           getlinked Tech
         </h1>
         <div className=" flex items-center justify-center sm:justify-start">
-          <h1 className="flex text-center text-[32px] font-bold  text-white sm:text-left sm:text-[80px]">
+          <h1 className="z-30 flex text-center text-[32px] font-bold  text-white sm:text-left sm:text-[80px]">
             Hackathon{" "}
             <span className="ml-2 flex items-center text-primaryColor sm:ml-3">
               1.0
@@ -53,7 +53,7 @@ function HeroSection() {
           </h1>
           <Emojis />
         </div>
-        <p className="mb-6 px-[63px] text-center font-mons text-[13px] font-normal leading-[22px] text-white sm:mb-[41px] sm:px-0 sm:text-left sm:text-xl sm:leading-8">
+        <p className="z-30 mb-6 px-[63px] text-center font-mons text-[13px] font-normal leading-[22px] text-white sm:mb-[41px] sm:px-0 sm:text-left sm:text-xl sm:leading-8">
           Participate in getlinked tech Hackathon 2023 stand
           <br className="hidden sm:inline-block" /> a chance to win a Big prize
         </p>
