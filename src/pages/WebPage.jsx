@@ -16,6 +16,7 @@ import ruleFlare from "../assets/ruleFlareLeft.png";
 import ruleFlareRight from "../assets/ruleFlareRight.png";
 import judgeFlare from "../assets/judgeFlare.png";
 import miniRuleFlareLeft from "../assets/ruleFlareMinLeft.png";
+import miniRuleFlareRight from "../assets/ruleMiniFlareRight.png";
 
 import heroFlareMini from "../assets/heroFlareMini.png";
 
@@ -46,6 +47,11 @@ function WebPage() {
       <img
         src={miniRuleFlareLeft}
         className="absolute left-0 top-[1449px] flex sm:hidden"
+        alt=""
+      />
+      <img
+        src={miniRuleFlareRight}
+        className="absolute right-[-17px] top-[1747px] flex sm:hidden"
         alt=""
       />
       <img
