@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import emoji from "../assets/walk.png";
 import dash from "../assets/dashUndelIne.svg";
-// import SecondaryButton from "./SecondaryButton";
 import { useEffect, useState } from "react";
 
 function RegisterForm({ showModal }) {
@@ -15,12 +14,10 @@ function RegisterForm({ showModal }) {
     useState(false);
   const [categories, setCategories] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  // const [isLoadingCategories, setIsLoadingCategories] = useState(false);
 
   useEffect(() => {
     async function getCategories() {
       try {
-        // setIsLoadingCategories(true);
         const res = await fetch(
           `https://backend.getlinked.ai/hackathon/categories-list`,
         );
@@ -28,8 +25,6 @@ function RegisterForm({ showModal }) {
         setCategories(data);
       } catch (err) {
         console.log(err);
-      } finally {
-        // setIsLoadingCategories(false);
       }
     }
     getCategories();
@@ -55,13 +50,13 @@ function RegisterForm({ showModal }) {
         setIsSubmitting(false);
       }
     }
-
     postData();
   }
+
   return (
     <form
       action=""
-      className="sm:shadow-contactFormShadow sm:bg-bgLight z-30 h-fit w-full rounded-xl px-[63px] py-[23px] sm:w-[740px] sm:px-[92px] sm:py-[65px]"
+      className="z-30 h-fit w-full rounded-xl px-[63px] py-[23px] sm:w-[740px] sm:bg-bgLight sm:px-[92px] sm:py-[65px] sm:shadow-contactFormShadow"
     >
       <h1 className="mb-[46px] hidden text-[32px] font-semibold text-primaryColor sm:block">
         Register
@@ -90,7 +85,7 @@ function RegisterForm({ showModal }) {
               placeholder="Enter the name of your group"
               value={team_name}
               onChange={(e) => setTeam_name(e.target.value)}
-              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
+              className="w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal text-greyText shadow-contactFormShadow sm:py-[15px] sm:text-sm"
             />
           </div>
           <div>
@@ -105,7 +100,7 @@ function RegisterForm({ showModal }) {
               value={phone_number}
               onChange={(e) => setPhone_number(e.target.value)}
               placeholder="Enter your phone number"
-              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
+              className="w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal text-greyText shadow-contactFormShadow sm:py-[15px] sm:text-sm"
             />
           </div>
         </div>
@@ -122,7 +117,7 @@ function RegisterForm({ showModal }) {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
-              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
+              className="w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal text-greyText shadow-contactFormShadow sm:py-[15px] sm:text-sm"
             />
           </div>
           <div>
@@ -137,7 +132,7 @@ function RegisterForm({ showModal }) {
               placeholder="What is your group project topic"
               value={project_topic}
               onChange={(e) => setProject_topic(e.target.value)}
-              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
+              className="w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal text-greyText shadow-contactFormShadow sm:py-[15px] sm:text-sm"
             />
           </div>
         </div>
@@ -154,7 +149,7 @@ function RegisterForm({ showModal }) {
               id="category"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
+              className="w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal text-greyText shadow-contactFormShadow sm:py-[15px] sm:text-sm"
               placeholder="Select your category"
             >
               {categories.map((i, index) => (
@@ -180,7 +175,7 @@ function RegisterForm({ showModal }) {
               id="grpSize"
               value={group_size}
               onChange={(e) => setGroup_size(e.target.value)}
-              className="shadow-contactFormShadow text-greyText w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal sm:py-[15px] sm:text-sm"
+              className="w-full rounded border-[1px] border-solid border-white bg-transparent px-[26px] py-[12px] text-[13px] font-normal text-greyText shadow-contactFormShadow sm:py-[15px] sm:text-sm"
               placeholder="Select"
             >
               <option value={1} className="bg-bgMain text-white">

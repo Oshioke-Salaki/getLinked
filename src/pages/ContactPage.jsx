@@ -1,9 +1,5 @@
 import ContactForm from "../ui/ContactForm";
 import Navbar from "../ui/Navbar";
-import instagram from "../assets/instagram.svg";
-import x from "../assets/x.svg";
-import facebook from "../assets/facebook.svg";
-import linkedIn from "../assets/linkedin.svg";
 
 import lightPurleStar from "../assets/lightPurpleStar.svg";
 import greyStar from "../assets/greyStar.svg";
@@ -13,12 +9,13 @@ import whiteStar from "../assets/whiteStar.svg";
 
 import flare1 from "../assets/contactFlare.png";
 import flare2 from "../assets/contactFlare2.png";
+import Socials from "../ui/Socials";
 
 function ContactPage() {
   return (
     <div className="relative overflow-x-hidden bg-[#150E28]">
       <div className="hidden sm:block">
-        <Navbar />
+        <Navbar hasBorder={false} />
       </div>
       <main className="flex h-full flex-col justify-center gap-x-[225px] px-[46px] pb-[38px] pt-[111px] sm:flex-row sm:pb-[115px] sm:pl-[188px] sm:pr-[208px] sm:pt-[115px]">
         <div className="z-30 mt-[56px] hidden text-white sm:inline-block">
@@ -44,24 +41,14 @@ function ContactPage() {
           <h6 className="mb-[14px] mt-[35px] font-mons text-base font-normal text-[#d434fe]">
             Share on
           </h6>
-          <div className="flex items-center gap-x-[17px]">
-            <img src={instagram} alt="" />
-            <img src={x} alt="" />
-            <img src={facebook} alt="" />
-            <img src={linkedIn} alt="" />
-          </div>
+          <Socials />
         </div>
         <ContactForm />
         <div className=" flex flex-col items-center sm:hidden">
           <h6 className="mb-[14px] mt-[35px] w-full text-center font-mons text-base font-normal text-[#d434fe]">
             Share on
           </h6>
-          <div className="flex items-center gap-x-[17px]">
-            <img src={instagram} alt="" />
-            <img src={x} alt="" />
-            <img src={facebook} alt="" />
-            <img src={linkedIn} alt="" />
-          </div>
+          <Socials />
         </div>
       </main>
 
