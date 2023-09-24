@@ -52,7 +52,7 @@ function WebPage() {
         alt=""
         className="absolute right-[-100px] top-[2642px] bg-blend-hard-light"
       />
-      <Navbar />
+      <Navbar hasBorder={true} />
       <HeroSection />
       <Idea />
       <Rules />
