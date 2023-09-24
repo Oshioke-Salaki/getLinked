@@ -74,12 +74,12 @@ function WebPage() {
       {/* Judge */}
       <img
         src={flareJudgeMiniLeft}
-        className="left-[-14px] top-[2378px] flex sm:hidden"
+        className="absolute left-[-14px] top-[2378px] flex sm:hidden"
         alt=""
       />
       <img
         src={flareJudgeMiniRight}
-        className="right-[-17px] top-[3041px] flex sm:hidden"
+        className="absolute right-[-17px] top-[3041px] flex sm:hidden"
         alt=""
       />
       <img
@@ -103,12 +103,12 @@ function WebPage() {
       {/* SPONSORS MINI FLARES */}
       <img
         src={sponsorMiniFlare1}
-        className="left-[-13px] top-[6244px] flex sm:hidden"
+        className="absolute left-[-13px] top-[6244px] flex sm:hidden"
         alt=""
       />
       <img
         src={sponsorMiniFlare2}
-        className="right-[-6px] top-[6577px] flex sm:hidden"
+        className="absolute right-[-6px] top-[6577px] flex sm:hidden"
         alt=""
       />
       <Navbar hasBorder={true} />
