@@ -20,14 +20,17 @@ import judgeFlare from "../assets/judgeFlare.png";
 function WebPage() {
   return (
     <div className="relative h-fit overflow-x-hidden bg-bgMain">
-      <div
+      {/* <div
         className="absolute left-[-180px] top-0 hidden h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:flex sm:h-auto sm:w-auto"
         style={{
           background: `url(${flare}) no-repeat`,
         }}
-      >
-        {/* <img src={flare}  /> */}
-      </div>
+      > */}
+      <img
+        src={flare}
+        className="absolute left-[-180px] top-0 hidden h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:flex sm:h-auto sm:w-auto"
+      />
+      {/* </div> */}
       <img
         src={flare2}
         className="absolute right-0 top-0 flex bg-blend-hard-light sm:hidden"
