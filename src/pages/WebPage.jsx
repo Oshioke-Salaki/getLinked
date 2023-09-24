@@ -16,12 +16,19 @@ import ruleFlare from "../assets/ruleFlareLeft.png";
 import ruleFlareRight from "../assets/ruleFlareRight.png";
 import judgeFlare from "../assets/judgeFlare.png";
 
+import heroFlareMini from "../assets/heroFlareMini.png";
+
 function WebPage() {
   return (
     <div className="relative h-fit overflow-x-hidden bg-bgMain">
       <img
+        src={heroFlareMini}
+        className="absolute left-0 top-0 flex sm:hidden"
+        alt=""
+      />
+      <img
         src={flare}
-        className="absolute left-[-50px] top-[100px] h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:top-0 sm:h-auto sm:w-auto"
+        className="absolute left-[-50px] top-[100px] hidden h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:top-0 sm:flex sm:h-auto sm:w-auto"
       />
       <img
         src={flare2}
