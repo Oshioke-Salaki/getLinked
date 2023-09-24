@@ -1,15 +1,15 @@
-import bulb from "../assets/bulb.png";
-// import PrimaryBtn from "./PrimaryBtn";
+import { NavLink } from "react-router-dom";
 import Timer from "./Timer";
+import TwinkleStar from "./TwinkleStar";
+
+import bulb from "../assets/bulb.png";
 import heroImg from "../assets/heroImg.png";
 import voidImg from "../assets/heroVoid.png";
-
+// STARS IMAGES
 import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
 
-import TwinkleStar from "./TwinkleStar";
 import Emojis from "./Emojis";
-import { NavLink } from "react-router-dom";
 function HeroSection() {
   return (
     <div className="relative flex h-fit flex-col overflow-x-hidden overflow-y-hidden border-b-[1px] border-b-borderColor px-[0px] pt-8 sm:h-[813px] sm:pl-[130px] sm:pr-[55px]">

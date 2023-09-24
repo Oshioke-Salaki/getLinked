@@ -1,12 +1,14 @@
 import idea from "../assets/idea.png";
-import darkPurplestar from "../assets/starDarkPurple.svg";
 import curlArr from "../assets/curlArrow.svg";
+
+// STAR IMAGES
+import darkPurplestar from "../assets/starDarkPurple.svg";
 import lightPurpleStar from "../assets/lightPurpleStar.svg";
 import TwinkleStar from "./TwinkleStar";
 
 function Idea() {
   return (
-    <div className="border-b-borderColor relative flex flex-col items-center justify-normal gap-y-[58px] border-b-[1px] pb-[78px]  pl-0 pr-0 pt-[29px] sm:flex-row sm:items-start sm:justify-between sm:gap-x-[60px] sm:pl-[230px] sm:pr-[148px] sm:pt-[62px]">
+    <div className="relative flex flex-col items-center justify-normal gap-y-[58px] border-b-[1px] border-b-borderColor pb-[78px]  pl-0 pr-0 pt-[29px] sm:flex-row sm:items-start sm:justify-between sm:gap-x-[60px] sm:pl-[230px] sm:pr-[148px] sm:pt-[62px]">
       <img
         src={curlArr}
         alt=""
@@ -22,7 +24,7 @@ function Idea() {
           Introduction to getlinked
           <br /> <span className="text-primaryColor">tech Hackathon 1.0</span>
         </h1>
-        <p className="font-mons mt-4 text-center text-[13px] font-normal leading-7 text-white sm:text-left sm:text-sm">
+        <p className="mt-4 text-center font-mons text-[13px] font-normal leading-7 text-white sm:text-left sm:text-sm">
           Our tech hackathon is a melting pot of visionaries, and its purpose is
           as clear as day: to shape the future. Whether you&apos;re a coding
           genius, a design maverick, or a concept wizard, you&apos;ll have the

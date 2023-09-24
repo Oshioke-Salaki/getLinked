@@ -1,14 +1,16 @@
+import TwinkleStar from "./TwinkleStar";
+import PrimaryBtn from "./PrimaryBtn";
+import Criteria from "./Criteria";
+
+// STAR IMAGES
 import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
 import purpleStar from "../assets/starDarkPurple.svg";
 import judgeImg from "../assets/judging.png";
-import Criteria from "./Criteria";
-import PrimaryBtn from "./PrimaryBtn";
-import TwinkleStar from "./TwinkleStar";
 
 function Judging() {
   return (
-    <div className="border-b-borderColor pb-59px relative flex flex-col items-center overflow-hidden border-b-[1px] pb-[59px] pl-0 pr-0 pt-[75px] sm:flex-row sm:items-start sm:gap-x-[40px] sm:pb-[100px] sm:pl-[66px] sm:pr-[105px]">
+    <div className="pb-59px relative flex flex-col items-center overflow-hidden border-b-[1px] border-b-borderColor pb-[59px] pl-0 pr-0 pt-[75px] sm:flex-row sm:items-start sm:gap-x-[40px] sm:pb-[100px] sm:pl-[66px] sm:pr-[105px]">
       <img
         src={judgeImg}
         alt=""

@@ -1,35 +1,26 @@
 /* eslint-disable react/prop-types */
-// import { useState } from "react";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
-// import PrimaryBtn from "./PrimaryBtn";
 import hamburger from "../assets/hamburgerIcon.svg";
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 
 function Navbar({ hasBorder }) {
-  // const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
-
-  // function toggleMenu() {
-  //   setShowHamburgerMenu((show) => !show);
-  // }
-
+  // Get Current route
   const location = useLocation();
-
   const { pathname } = location;
 
   const [atRegPage, setAtRegPage] = useState(() => {
     if (pathname === "/register") return true;
     return false;
   });
+  const [toggleNav, setToggleNav] = useState(false);
 
   useEffect(() => {
     if (pathname === "/register") setAtRegPage(true);
     else setAtRegPage(false);
   }, [pathname]);
-
-  const [toggleNav, setToggleNav] = useState(false);
 
   return (
     <nav
@@ -40,9 +31,6 @@ function Navbar({ hasBorder }) {
       <Logo />
       <div className="hidden gap-[121px] sm:flex sm:justify-end">
         <NavLinks />
-        {/* <PrimaryBtn atRegPage={atRegPage} type="reg">
-          Register
-        </PrimaryBtn> */}
         {atRegPage ? (
           <div
             style={{

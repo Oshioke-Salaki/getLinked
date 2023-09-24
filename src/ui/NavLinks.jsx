@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 function NavLinks() {
+  // Get current route
   const location = useLocation();
-
   const { pathname } = location;
 
   const [atContactPage, setAtContactPage] = useState(() => {

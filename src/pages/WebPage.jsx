@@ -10,7 +10,6 @@ import Rules from "../ui/Rules";
 import SponsorsSection from "../ui/SponsorsSection";
 import TimelineSection from "../ui/TimelineSection";
 import flare from "../assets/flare-top.png";
-// import flare from "../assets/flare1.png";
 import flare2 from "../assets/flare-t2.png";
 import heroVoid from "../assets/heroVoid.png";
 import ruleFlare from "../assets/ruleFlareLeft.png";
@@ -20,17 +19,10 @@ import judgeFlare from "../assets/judgeFlare.png";
 function WebPage() {
   return (
     <div className="relative h-fit overflow-x-hidden bg-bgMain">
-      {/* <div
-        className="absolute left-[-180px] top-0 hidden h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:flex sm:h-auto sm:w-auto"
-        style={{
-          background: `url(${flare}) no-repeat`,
-        }}
-      > */}
       <img
         src={flare}
         className="absolute left-[-180px] top-0 hidden h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:flex sm:h-auto sm:w-auto"
       />
-      {/* </div> */}
       <img
         src={flare2}
         className="absolute right-0 top-0 z-10 flex bg-blend-hard-light"
