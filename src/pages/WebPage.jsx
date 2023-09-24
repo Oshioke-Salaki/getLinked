@@ -21,7 +21,7 @@ function WebPage() {
     <div className="relative h-fit overflow-x-hidden bg-bgMain">
       <img
         src={flare}
-        className="absolute left-[-180px] top-0 h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:h-auto sm:w-auto"
+        className="absolute left-[-100px] top-[100px] h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:top-0 sm:h-auto sm:w-auto"
       />
       <img
         src={flare2}
