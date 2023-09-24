@@ -79,12 +79,12 @@ function PrizesSection() {
       <img
         src={flare1}
         alt=""
-        className="absolute left-[18px] top-[-67px] z-0"
+        className="absolute left-[18px] top-[-67px] z-0 hidden sm:flex"
       />
       <img
         src={flareRight}
         alt=""
-        className="botom-[-238px] absolute right-[-21px] z-0"
+        className="botom-[-238px] absolute right-[-21px] z-0 hidden sm:flex"
       />
     </div>
   );
