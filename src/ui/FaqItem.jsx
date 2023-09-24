@@ -4,7 +4,7 @@ import { useState } from "react";
 function FaqItem({ children }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex border-b-[1px] border-b-[#D434FE] pb-[8px] text-left sm:pb-[13px] sm:text-left">
+    <div className="flex flex-col border-b-[1px] border-b-[#D434FE] pb-[8px] text-left sm:pb-[13px] sm:text-left">
       <h1 className="flex w-full items-center justify-between font-mons text-xs font-normal leading-[18px] text-white sm:text-sm sm:leading-7">
         {children}{" "}
         <span
