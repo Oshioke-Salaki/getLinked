@@ -26,7 +26,7 @@ function Navbar({ hasBorder }) {
     <nav
       className={`${
         hasBorder && "border-b-[1px] border-b-borderColor"
-      }  relative flex items-center  justify-between px-[48px] pb-[21px] pt-[36px] sm:px-[128px] sm:pb-[25px] sm:pt-[63px]`}
+      }  relative z-[200] flex  items-center justify-between px-[48px] pb-[21px] pt-[36px] sm:px-[128px] sm:pb-[25px] sm:pt-[63px]`}
     >
       <Logo />
       <div className="hidden gap-[121px] sm:flex sm:justify-end">
