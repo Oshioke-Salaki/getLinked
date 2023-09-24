@@ -21,11 +21,11 @@ function WebPage() {
     <div className="relative h-fit overflow-x-hidden bg-bgMain">
       <img
         src={flare}
-        className="absolute left-[-180px] top-0 hidden h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:flex sm:h-auto sm:w-auto"
+        className="absolute left-[-180px] top-0 h-[442px] w-[396px] bg-blend-hard-light sm:left-0 sm:h-auto sm:w-auto"
       />
       <img
         src={flare2}
-        className="absolute right-[100px] top-0 z-10 flex bg-blend-hard-light sm:right-0"
+        className="absolute right-0 top-0 z-10 hidden bg-blend-hard-light sm:flex"
       />
       <img
         src={heroVoid}
