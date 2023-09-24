@@ -21,12 +21,12 @@ function FaqSection() {
           <FaqItem>
             Can I work on a project I started before the hackathon?
           </FaqItem>
+          <FaqItem>What happens if I need help during the hackathon?</FaqItem>
           <FaqItem>
-            Can I work on a project I started before the hackathon?
+            What happens if I don&apos;t have an idea for a project?
           </FaqItem>
-          <FaqItem>
-            Can I work on a project I started before the hackathon?
-          </FaqItem>
+          <FaqItem>Can I join a team or do I have to come with one?</FaqItem>
+          <FaqItem>What happens after the hackathon ends?</FaqItem>
           <FaqItem>
             Can I work on a project I started before the hackathon?
           </FaqItem>
