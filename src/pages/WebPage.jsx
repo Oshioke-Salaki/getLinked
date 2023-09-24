@@ -25,7 +25,7 @@ function WebPage() {
       />
       <img
         src={flare2}
-        className="absolute right-0 top-0 z-10 flex bg-blend-hard-light"
+        className="absolute right-[100px] top-0 z-10 flex bg-blend-hard-light sm:right-0"
       />
       <img
         src={heroVoid}
