@@ -59,7 +59,7 @@ function PolicySection() {
       <img
         src={policy}
         alt=""
-        className="h-full w-full sm:h-[952px] sm:w-[583px]"
+        className="h-[447px] w-[273px] sm:h-[952px] sm:w-[583px]"
       />
 
       {/* STARS */}
