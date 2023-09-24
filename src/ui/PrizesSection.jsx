@@ -3,26 +3,18 @@ import FirstPrizeBadge from "./FirstPrizeBadge";
 import SecondPrizeBadge from "./SecondPrizeBadge";
 import ThirdPrizeBadge from "./ThirdPrizeBadge";
 import medals from "../assets/medals.png";
+
 import purpleStar from "../assets/lightPurpleStar.svg";
 import whiteStar from "../assets/whiteStar.svg";
 import greyStar from "../assets/greyStar.svg";
 import TwinkleStar from "./TwinkleStar";
+
 import flare1 from "../assets/flare1.png";
 import flareRight from "../assets/flareRight.png";
 
 function PrizesSection() {
   return (
     <div className="relative z-20 flex flex-col justify-normal pb-[89px] pl-0 pr-0 pt-[72px] sm:flex-row sm:justify-center sm:gap-x-[37px] sm:pb-[149px] sm:pl-[106px] sm:pr-[129px] sm:pt-[74px]">
-      <img
-        src={flare1}
-        alt=""
-        className="absolute left-[18px] top-[-67px] z-0"
-      />
-      <img
-        src={flareRight}
-        alt=""
-        className="botom-[-238px] absolute right-[-21px] z-0"
-      />
       <img
         src={prizeMain}
         alt=""
@@ -81,6 +73,18 @@ function PrizesSection() {
       <TwinkleStar
         className="left-[243px] top-[805px] h-[12px] w-[10px] sm:left-[1143px] sm:top-[806px] sm:h-[32px] sm:w-[26px]"
         star={greyStar}
+      />
+
+      {/* FLARES */}
+      <img
+        src={flare1}
+        alt=""
+        className="absolute left-[18px] top-[-67px] z-0"
+      />
+      <img
+        src={flareRight}
+        alt=""
+        className="botom-[-238px] absolute right-[-21px] z-0"
       />
     </div>
   );

@@ -101,7 +101,7 @@ const TimelineSection = () => {
         </div>
       </div>
 
-      {/* STAR */}
+      {/* STARS */}
       <TwinkleStar
         className="left-[82px] top-[188px] h-[16px] w-[14px] sm:left-[338px] sm:top-[226px] sm:h-auto sm:w-auto"
         star={darkPurpleStar}

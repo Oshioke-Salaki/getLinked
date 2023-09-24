@@ -1,6 +1,7 @@
 import tick from "../assets/tick.png";
 import policy from "../assets/policy.png";
 import PrimaryBtn from "./PrimaryBtn";
+
 import TwinkleStar from "./TwinkleStar";
 import greyStar from "../assets/greyStar.svg";
 import darkPurple from "../assets/starDarkPurple.svg";
@@ -15,15 +16,15 @@ function PolicySection() {
           Privacy Policy and
           <br /> <span className="text-primaryColor">Terms</span>
         </h1>
-        <h6 className="font-mons mb-7 text-xs font-normal leading-7 text-white opacity-75 sm:mb-[30px] sm:text-sm">
+        <h6 className="mb-7 font-mons text-xs font-normal leading-7 text-white opacity-75 sm:mb-[30px] sm:text-sm">
           Last updated on September 12, 2023
         </h6>
         <p className="font-mons text-xs font-normal leading-[23px] text-white sm:text-sm sm:leading-[26px]">
-          Below are our privacy & policy, which outline a lot of goodies. it’s
-          our aim to always take of our participant
+          Below are our privacy & policy, which outline a lot of goodies.
+          it&apos;s our aim to always take of our participant
         </p>
         <div className="mt-[30px] rounded-[5px] border-[1px] border-solid border-[#D434FE] py-[45px]  sm:mt-[69px] sm:py-[59px]">
-          <p className="font-mons mb-[21px] px-[12px] text-xs font-normal leading-[26px] text-white sm:mb-6 sm:px-[65px] sm:text-sm sm:leading-[30px]">
+          <p className="mb-[21px] px-[12px] font-mons text-xs font-normal leading-[26px] text-white sm:mb-6 sm:px-[65px] sm:text-sm sm:leading-[30px]">
             At getlinked tech Hackathon 1.0, we value your privacy and are
             committed to protecting your personal information. This Privacy
             Policy outlines how we collect, use, disclose, and safeguard your
@@ -32,19 +33,19 @@ function PolicySection() {
             in this policy.
           </p>
           <div className="flex flex-col items-center pl-[22px] pr-[24px] sm:pl-[65px] sm:pr-[39px]">
-            <h2 className="font-mons w-full text-left text-[13px] font-bold leading-7 text-[#d434fe] sm:text-base sm:leading-[35px]">
+            <h2 className="w-full text-left font-mons text-[13px] font-bold leading-7 text-[#d434fe] sm:text-base sm:leading-[35px]">
               Licensing Policy
             </h2>
-            <h3 className="font-mons mb-[21px] w-full text-left text-xs font-bold leading-[26px] text-white sm:mb-[18px] sm:text-sm sm:leading-[30px]">
+            <h3 className="mb-[21px] w-full text-left font-mons text-xs font-bold leading-[26px] text-white sm:mb-[18px] sm:text-sm sm:leading-[30px]">
               Here are the terms of our Standard License:
             </h3>
             <ul className="mb-8 sm:mb-4">
-              <li className="font-mons flex gap-x-[14px] text-left text-xs font-normal leading-[21px] text-white sm:text-sm sm:leading-[30px]">
+              <li className="flex gap-x-[14px] text-left font-mons text-xs font-normal leading-[21px] text-white sm:text-sm sm:leading-[30px]">
                 <img src={tick} alt="" className="mt-2 h-[17px] w-[17px]" />
                 The Standard License grants you a non-exclusive right to
                 navigate and register for our event
               </li>
-              <li className="font-mons flex gap-x-[14px] text-left text-xs font-normal leading-[21px] text-white sm:text-sm sm:leading-[30px]">
+              <li className="flex gap-x-[14px] text-left font-mons text-xs font-normal leading-[21px] text-white sm:text-sm sm:leading-[30px]">
                 <img src={tick} alt="" className="mt-2 h-[17px] w-[17px]" />
                 You are licensed to use the item available at any free source
                 sites, for your project developement

@@ -4,12 +4,14 @@ import sponsor3 from "../assets/sponsor3.png";
 import sponsor4 from "../assets/sponsor4.png";
 import sponsor5 from "../assets/sponsor5.png";
 import sponsor6 from "../assets/sponsor6.png";
+import sponsors from "../assets/sponsors.png";
+
 import flareLeft from "../assets/flare1.png";
 import flareRight from "../assets/flare4.png";
+
 import darkPurple from "../assets/starDarkPurple.svg";
 import purpleStar from "../assets/lightPurpleStar.svg";
 import whiteStar from "../assets/whiteStar.svg";
-import sponsors from "../assets/sponsors.png";
 import TwinkleStar from "./TwinkleStar";
 
 function SponsorsSection() {

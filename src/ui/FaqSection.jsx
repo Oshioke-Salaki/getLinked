@@ -2,6 +2,7 @@ import TwinkleStar from "./TwinkleStar";
 import faq from "../assets/faq.png";
 import FaqItem from "./FaqItem";
 
+// STAR IMAGES
 import darkPurpleStar from "../assets/starDarkPurple.svg";
 import lightPurpleStar from "../assets/lightPurpleStar.svg";
 
