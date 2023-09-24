@@ -36,7 +36,7 @@ function HeroSection() {
           />
           <img src={heroImg} alt="" className="grayscale" />
         </div>
-        <h1 className="relative mt-10 pt-[26px] text-center text-[32px] font-bold text-white  sm:mt-[100px] sm:pt-[80px] sm:text-left sm:text-[80px]">
+        <h1 className="relative mt-10 pt-[26px] text-center text-[32px] font-bold text-white  sm:mt-[30px] sm:pt-[80px] sm:text-left sm:text-[80px]">
           <img
             src={bulb}
             alt=""
