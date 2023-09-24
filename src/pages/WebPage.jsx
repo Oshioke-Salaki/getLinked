@@ -35,7 +35,7 @@ function WebPage() {
       <img
         src={ruleFlare}
         alt=""
-        className="absolute top-[5491px] bg-blend-hard-light sm:top-[1319px]"
+        className="absolute top-[5491px] hidden bg-blend-hard-light sm:top-[1319px] sm:flex"
       />
       <img
         src={ruleFlareRight}
