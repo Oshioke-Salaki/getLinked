@@ -13,6 +13,7 @@ export default {
         bgMain: "#150E28",
         borderColor: "rgba(255, 255, 255, 0.18)",
         bgLight: "rgba(255, 255, 255, 0.03)",
+        opaque: "rgba(217, 217, 217, 0.03)",
         textBg: "linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%)",
         greyText: "rgba(255, 255, 255, 0.25)",
         buttonBg:

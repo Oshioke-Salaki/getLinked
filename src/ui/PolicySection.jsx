@@ -24,7 +24,7 @@ function PolicySection() {
           Below are our privacy & policy, which outline a lot of goodies.
           it&apos;s our aim to always take of our participant
         </p>
-        <div className="mt-[30px] rounded-[5px] border-[1px] border-solid border-[#D434FE] py-[45px]  sm:mt-[69px] sm:py-[59px]">
+        <div className="bg-opaque z-40 mt-[30px] rounded-[5px] border-[1px] border-solid border-[#D434FE] py-[45px]  sm:mt-[69px] sm:py-[59px]">
           <p className="mb-[21px] px-[12px] font-mons text-xs font-normal leading-[26px] text-white sm:mb-6 sm:px-[65px] sm:text-sm sm:leading-[30px]">
             At getlinked tech Hackathon 1.0, we value your privacy and are
             committed to protecting your personal information. This Privacy
