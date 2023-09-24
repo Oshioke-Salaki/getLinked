@@ -89,7 +89,7 @@ function PolicySection() {
       />
 
       <TwinkleStar
-        className="left-[991px] top-[697px] hidden sm:flex"
+        className="left-[39px] top-[1031px] hidden sm:left-[991px] sm:top-[697px] sm:flex"
         star={lightPurpleMini}
       />
 
