@@ -33,7 +33,7 @@ function WebPage() {
       {/* </div> */}
       <img
         src={flare2}
-        className="absolute right-0 top-0 flex bg-blend-hard-light sm:hidden"
+        className="absolute right-0 top-0 z-10 hidden bg-blend-hard-light sm:flex"
       />
       <img
         src={heroVoid}
