@@ -6,7 +6,7 @@ export default function Emojis() {
     <img
       src={emojis}
       alt=""
-      className="h-[33px] w-[55px] sm:h-[86px] sm:w-[144px]"
+      className="z-30 h-[33px] w-[55px] sm:h-[86px] sm:w-[144px]"
     />
   );
 }
